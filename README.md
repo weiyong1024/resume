@@ -1,2 +1,2 @@
 # Personal resume of weiyong1024
-Personal resume LaTEX project
+Please download `resume.pdf` for your convenience.
