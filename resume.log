@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.4.9)  5 MAY 2020 19:13
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.4.9)  12 MAY 2020 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1564,30 +1564,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
 (Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 
-213.
+214.
 
 
 LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/bx/it' undefined
 (Font)              using `TU/FandolSong-Regular(0)/bx/n' instead on input line
- 283.
+ 282.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 318.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 318.
  (./resume.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 316.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 316.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 318.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 318.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 318.
  ) 
 Here is how much of TeX's memory you used:
- 27921 strings out of 493007
- 542954 string characters out of 6136720
- 611453 words of memory out of 5000000
- 31646 multiletter control sequences out of 15000+600000
+ 27939 strings out of 493007
+ 544395 string characters out of 6136720
+ 613453 words of memory out of 5000000
+ 31664 multiletter control sequences out of 15000+600000
  534207 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,11n,74p,10433b,520s stack positions out of 5000i,500n,10000p,200000b,80000s
