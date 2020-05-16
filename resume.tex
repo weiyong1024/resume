@@ -87,7 +87,7 @@
 	
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{\href{http://www.linkedin.com/in/yong-wei-0a1383167/}{\Large Yong Wei}} & Email : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
+		\textbf{\href{https://weiyong.org/}{\Large Yong Wei}} & Email : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
 		\href{https://github.com/weiyong1024}{\textit{Github}} & Mobile : (+86) 186-1263-2313 \\
 	\end{tabular*}
 	
@@ -205,7 +205,7 @@
 		
 		%----------HEADING-----------------
 		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-			\textbf{\href{http://www.linkedin.com/in/yong-wei-0a1383167/}{\Large 魏雍}} & 邮箱 : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
+			\textbf{\href{https://weiyong.org/}{\Large 魏雍}} & 邮箱 : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
 			\href{https://github.com/weiyong1024}{\textit{Github}} & Mobile : (+86) 186-1263-2313 \\
 		\end{tabular*}
 		
@@ -228,7 +228,7 @@
 		
 		\resumeSubheading
 		{小马智行}{中国，北京}
-		{软件工程师 - 基础架构}{2019年2月 - 2020年5月}
+		{软件工程师 - 基础架构}{2019年2月 - 2020年3月}
 		\resumeItemListStart
 		\resumeItem{行车录音工具链}
 		{原有issue记录流程需要一位工程师跟车通过键盘记录问题的描述信息，故需要增加通过语音记录issue的流程供司机使用以支持单人单车运营。为此新增麦克风和按钮作为硬件方案，首先在Bazel项目中引入基于BSD软件许可的输入设备接口库evdev，并基于该库和Linux的ALSA音频驱动实现负责硬件检测、监听来自外部按钮的信号和车载系统进程的管道信息、触发与停止麦克风录音的守护进程sound\_recorder，在行车过程中将issue信息以音频文件的形式存储下来。在数据处理阶段，首先在Google Cloud Platform上搭建语音转文字服务，在本地使用Python脚本将音频文件的内容提取出来，然后使用Google的Protobuf工具将原信息序列化。最后使用已有的Issue汇报系统流程将相关问题发送给QA同事。}
