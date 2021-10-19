@@ -83,12 +83,12 @@
 \begin{document}
 	
 	%---------SPACING FOR ENGLISH PAGE---------
-	\begin{spacing}{0.87}
+	\begin{spacing}{0.80}
 	
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{\href{https://weiyong.org/}{\Large Yong Wei}} & Email : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
-		\href{https://github.com/weiyong1024}{\textit{Github}} & Mobile : (+86) 186-1263-2313 \\
+		\textbf{\href{https://weiyong.org}{\Large Yong Wei}} & Email : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
+		\textit{Increase production capacity and happniess for every one} & Mobile : (+86) 173-7657-1024 \\
 	\end{tabular*}
 	
 	
@@ -96,11 +96,21 @@
 	\section{Education}
 	\resumeSubHeadingListStart
 	\resumeSubheading
-	{Beihang University}{Beijing, China}
-	{Master of Engineering in Electronic and Communications}{Sep. 2016 -- Jan. 2019}
+	{Master - EE - Beihang University}{Beijing, China}
+	{Exempt Entry Exam; Finish courses and research publishing by the end of the $1^{st}$ semester}{Sep. 2016 -- Jan. 2019}
 	\resumeSubheading
-	{Beihang University (Honors College)}{Beijing, China}
-	{Bachelor of Engineering in Electrical and Electronics;  GPA: 3.7}{Sept. 2012 -- Jun. 2016}
+	{Bachelor - EE - Beihang University}{Beijing, China}
+	{Exempt NCEE; Honors College(top 50 among 3000+ freshmen);  GPA: 3.7}{Sept. 2012 -- Jun. 2016}
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------Competitions-----------------
+	\section{Competitive programming}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Google Code Jam Kickstart 2017}{}
+	{Top $5\%$, rank $108^{th}$ globally. \href{https://codejam.withgoogle.com/codejam/contest/7254486/scoreboard\#sp=91}{\textbf{scoreboard, id:WeiYong1024}}}{}
+	
 	\resumeSubHeadingListEnd
 	
 	
@@ -109,11 +119,23 @@
 	\resumeSubHeadingListStart
 	
 	\resumeSubheading
+	{Alibaba Cloud}{Hangzhou, China}
+	{Senior Software Engineer}{Aug 2020 - Now}
+	\resumeItemListStart
+	\resumeItem{Apsara stack - application level ops system}
+	{Lead the team to develop the app-level ops system for government affairs related apps, which composed of 3 main sub-system including app-ops-center, resource-ops-center and collection-ops-center. Functionalities are provided such as CMDB, monitoring, resource-operating, app-topology, inspection, reporting. We deploy the system in 4 major city in PRC including 1 demonstration project.}
+	\resumeItem{Apsara stack - platform level ops system}
+	{Lead an 8-member team(5 backend SE, 2 frontend SE, 1 PM including external staff) to refactor the intracompany side ops-platform used by TAM from Alibaba Cloud. Support pipeline for project demand, project delivery-to-operation, service performance tracking to make the processes highly online and normative. And build QA-robot to improve labor efficiency.}
+	\resumeItem{Middleware - network traffic scheduling}
+	{Landing project in Alibaba. As a member of high-availability team, I am in charge of the middle ware for cluster traffic scheduling used by the entire group. During my tenure, the middle are was promoted to empower all Alibaba core service and more than 400K containers are covered by it. The middle ware monitors traffic for every single container, finds outliers in seconds. And abnormal traffic is scheduled and recovered in minutes. Providing escort for 2020 e-commerce festival at 11.11.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
 	{Pony.ai}{Beijing, China}
 	{Software Engineer - Infrastructure}{Feb 2019 - Mar 2020}
 	\resumeItemListStart
 	\resumeItem{Voice Logging Pipeline}
-	{The original issue recording pipeline needs an onboard engineer to record the log message via keyboard. So it is necessary to provide a voice logging pipeline to enable single-onboard operator. In the new solution, a pair of microphone(for recording) and hand button(for trigger) is equipped for each self-driving vehicle (SDV). First importing the opensource library evdev with BSD license as the input event interface. Then writing a daemon processing based on evdev and ALSA driver from Linux to check the hardware, who listens to signal from the hand button and FIFO connected with the onboard main process, triggers or stops the microphone, and saves the audio files during trips. For the data processing part, first building the speech-to-text service on Google Cloud Platform. Then extract the content from audio files into text. Finally serializing the meta-info by Google Protobuf and create issues by current issue-reporting pipeline.}
+	{Provide the voice logging pipeline to enable single-onboard operator. In this solution, a pair of microphone(for recording) and hand button(for trigger) is equipped for each self-driving vehicle (SDV). First importing the opensource library evdev with BSD license as the input event interface. Then writing a daemon processing based on evdev and ALSA driver from Linux to check the hardware, who listens to signal from the hand button and FIFO connected with the onboard main process, triggers or stops the microphone, and saves the audio files during trips. For the data processing part, first building the speech-to-text service on Google Cloud Platform. Then extract the content from audio files into text. Finally serializing the meta-info by Google Protobuf and create issues by current issue-reporting pipeline.}
 	\resumeItem{Car Sound Workflow}
 	{The original Car Sound Module uses Pico library by Google to convert the hardcoded content into audio-stream and then play it out, which is a waste of computing resources and is limited to single Language support. The new car sound module is built on a file-based pipeline, aiming to break those limitations. First, build a internal Python command-line tool (CLI) for engineers to add/update and manage sound suite version: First, write CloudFormation template on AWS to build the Text-to-Speech service, and add a related option in the CLI. Then, add uploading/downloading interface to the storage server in the CLI and enabling local cache. For the onboard part, adding sound names into the sound-request schema, load the audio stream into memory when initializing Car Sound Module, then play the sound when receiving the request.}
 	\resumeItemListEnd
@@ -134,7 +156,7 @@
 	{Software Engineer Intern - Web Full Stack}{Jun 2018 - Sep 2018}
 	\resumeItemListStart
 	\resumeItem{Host Retrospect Page}
-	{Retrospect page for Airbnb host users. Added related endpoints and mobile web pages on Ruby On Rails framework. Discussed with the designers on the contents and formats of web pages.}
+	{Retrospect page for Airbnb host users on mobile devices, which is build on Ruby On Rails. Also participant in the design work.}
 	\resumeItemListEnd
 	
 	\resumeSubheading
@@ -142,27 +164,9 @@
 	{Research Intern}{Jan 2018 - Jun 2018}
 	\resumeItemListStart
 	\resumeItem{Model Search}
-	{During the first half, after the dimension of the input graph increased by $14\%$, we aimed to reduce the FLOPs (float operations per second) of the CNN (convolutional neural network) of face recognition module on mobile devices to the same level as before, without damaging the performance of the whole model which is measured by $\frac{1}{10,000}$ passing rate (ROC value when $x=\frac{1}{10,000}$). The problem was solved by adding a bottleneck layer before the Inception-ResNet module to compress channels of the input feature graph by $\frac{1}{2}$. As for the second half, we aimed to improve the performance of our face recognition module referring to state-of-the-art CNN architectures. After experiments on Xception, DenseNet and several other architectures, I proposed a modified version of Google Inception V4 for our production: Instead of using the same atom modules everywhere, different Inception-ResNet modules were used for the shallow, medium and deep part of the CNN. On the other hand, the $N \times N$ kernels of the medium and deep part were replaced by a sequence of $1 \times N$ and $N \times 1$ kernels to improve model capacity. As a result, the $\frac{1}{10,000}$ passing rate was improved by $1\%$ on most benchmarks.}
+	{Participant in the project for VIVO X21 phone, where my job is to optimize the CNN model. First, by adding a bottleneck layer before the Inception-ResNet module, the performance is improved by $14\%$ without additional FLOPS(float operations per second) overhead. Then, after replacing some $N \times N$ convolutional kernels by a sequence of $1 \times N$ and $N \times 1$ kernels,the $\frac{1}{10,000}$ passing rate(ROC value when $x=\frac{1}{10,000}$) is improved by $1\%$ on most benchmarks.}
 	\resumeItemListEnd
 	
-	\resumeSubheading
-	{Beihang University}{Beijing China}
-	{Research}{Jul 2015 - Mar 2016}
-	\resumeItemListStart
-	\resumeItem{The $5^{th}$ Generation Mobile Network}
-	{Proposed an channel estimation method based on uplink wireless data and channel sparcity with supervisor, improving upper bound of the wireless system's throughput by $28\%$ according to simulation results.\\Paper published in Journal of Signal Processing (First author). DOI: 10.16798/j.issn.1003-0530.2017.06.002}
-	\resumeItemListEnd
-	
-	\resumeSubHeadingListEnd
-
-	
-	%-----------Competitions-----------------
-	\section{Competitive programming}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-	{Google Code Jam Kickstart 2017 Round F}{}
-	{Top $5\%$, rank $108^{th}$ globally. \href{https://codejam.withgoogle.com/codejam/contest/7254486/scoreboard\#sp=91}{\textbf{scoreboard, id:WeiYong1024}}}{}
-
 	\resumeSubHeadingListEnd
 	
 	
@@ -181,14 +185,18 @@
 	
 	
 	%--------PROGRAMMING SKILLS------------
-	\section{Programming Skills}
+	\section{Skill Stack}
 	  \resumeSubHeadingListStart
 	    \item{
-	      \textbf{Languages}{: Use C++, Python most commonly; Have experience in Shell, JavaScript, }
+	      \textbf{Bottom architecture}{: Cloud computing system, high available cluster architecture}
 	      \hfill
 	    }
+       \item{
+       	  \textbf{Applicational architecture}{: Web, self driving vehicle, face recognition, application ops platform}
+       	  \hfill
+       	}
     	\item{
-    	  \textbf{Technologies}{: Have experience in AWS, Google Cloud, Kubernetes, React}
+    	  \textbf{Programming languages}{: Java, C++ and Python are the top 3 most commonly used}
     	  \hfill
     	}
 	  \resumeSubHeadingListEnd
@@ -205,8 +213,8 @@
 		
 		%----------HEADING-----------------
 		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-			\textbf{\href{https://weiyong.org/}{\Large 魏雍}} & 邮箱 : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
-			\href{https://github.com/weiyong1024}{\textit{Github}} & Mobile : (+86) 186-1263-2313 \\
+			\textbf{\href{https://weiyong.org}{\Large 魏雍}} & 邮箱 : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
+			\textit{让每个人更幸福地提高产能} & Mobile : (+86) 173-7657-1024 \\
 		\end{tabular*}
 		
 		
@@ -214,11 +222,21 @@
 		\section{教育背景}
 		\resumeSubHeadingListStart
 		\resumeSubheading
-		{北京航空航天大学}{中国，北京}
-		{电子与通信工程硕士}{2016年1月 -- 2019年1月}
+		{硕士 - 北京航空航天大学 - 电子与通信工程}{中国，北京}
+		{保研; 研一上发表核心期刊; 北京市优干}{2016年1月 -- 2019年1月}
 		\resumeSubheading
-		{北京航空航天大学 (沈元荣誉学院)}{中国，北京}
-		{电子信息工程硕士； GPA: 3.7}{2012年9月 -- 2016年6月}
+		{本科 - 北京航空航天大学 - 电子信息工程}{中国，北京}
+		{高中物理竞赛保送; 沈元荣誉学院(入学top50/3000+); 北京市三好; GPA: 3.7}{2012年9月 -- 2016年6月}
+		\resumeSubHeadingListEnd
+		
+		
+		%-----------Competitions-----------------
+		\section{编程竞赛}
+		\resumeSubHeadingListStart
+		\resumeSubheading
+		{Google Code Jam Kickstart (谷歌2017全球校招赛)}{}
+		{全球 $108^{th}$, 中国 $18^{th}$, 前 $5\%$ \href{https://codejam.withgoogle.com/codejam/contest/7254486/scoreboard\#sp=91}{\textbf{计分板链接 (id - WeiYong1024)}}}{}
+		
 		\resumeSubHeadingListEnd
 		
 		
@@ -227,11 +245,23 @@
 		\resumeSubHeadingListStart
 		
 		\resumeSubheading
+		{阿里云}{中国，杭州}
+		{高级工程师}{2020年8月 - 至今}
+		\resumeItemListStart
+		\resumeItem{混合云产品 - 智能云管平台}
+		{带虚线团队构建适用于混合云上政务应用的通用运维系统。集成应用运维中心、资源运营中心、总集管理中心三大子系统，在通用信息管理系统的基础上，提供云资源级别和业务级别的监控告警、资源运营、应用拓扑、巡检播报等功能。以一个标杆项目为重点建设，在全国四个主要城市部署该系统。护航2021某省会城市小学入学等项目。}
+		\resumeItem{混合云产品 - 运维管控平台}
+		{带8人虚线团队（5后端、2前端、1产品），重构混合云中心侧运维平台，支撑混合云项目变更流程、混合云交付转运维流程，构建服务履约线上跟踪能力，构建工具使用答疑机器人。提升运维人效，实现运维流程线上化、规范化。}
+		\resumeItem{基础中间件 - 流量调度}
+		{来阿里的landing项目，作为高可用团队的一员，负责阿里云内部流量调度中间件。任职期间，推广产品纳管了阿里集团全部核心应用，支撑40W+容器，提供集群单容器维度秒级流量监控、离群点发现、分钟级流量调度与恢复链路。护航2020年双十一双峰平稳进行。}
+		\resumeItemListEnd
+		
+		\resumeSubheading
 		{小马智行}{中国，北京}
-		{软件工程师 - 基础架构}{2019年2月 - 2020年3月}
+		{工程师 - 基础架构}{2019年2月 - 2020年3月}
 		\resumeItemListStart
 		\resumeItem{行车录音工具链}
-		{原有issue记录流程需要一位工程师跟车通过键盘记录问题的描述信息，故需要增加通过语音记录issue的流程供司机使用以支持单人单车运营。为此新增麦克风和按钮作为硬件方案，首先在Bazel项目中引入基于BSD软件许可的输入设备接口库evdev，并基于该库和Linux的ALSA音频驱动实现负责硬件检测、监听来自外部按钮的信号和车载系统进程的管道信息、触发与停止麦克风录音的守护进程sound\_recorder，在行车过程中将issue信息以音频文件的形式存储下来。在数据处理阶段，首先在Google Cloud Platform上搭建语音转文字服务，在本地使用Python脚本将音频文件的内容提取出来，然后使用Google的Protobuf工具将原信息序列化。最后使用已有的Issue汇报系统流程将相关问题发送给QA同事。}
+		{增加通过语音记录issue的流程供司机使用以支持单人单车运营。为此新增麦克风和按钮作为硬件方案，首先在Bazel项目中引入基于BSD软件许可的输入设备接口库evdev，并基于该库和Linux的ALSA音频驱动实现负责硬件检测、监听来自外部按钮的信号和车载系统进程的管道信息、触发与停止麦克风录音的守护进程sound\_recorder，在行车过程中将issue信息以音频文件的形式存储下来。数据处理阶段，在谷歌云上搭建语音转文字服务，提取音频文件内容，序列化后对接Issue汇报流程将相关问题发至QA。}
 		\resumeItem{车载语音系统}
 		{原有的车载语音模块使用 Google 的 Pico 文字转语音工具库在行车过程中将硬编码的语音内容文本实时播放，从而导致文字转语音的过程需要耗费车载计算资源，同时语言被限制只能使用英文。新的车载语音系统使用基于音频文件的工作流程，旨在减少计算量并支持语音的I18N。为此首先用Python编写内部click命令行工具car\_sound\_utils(以下简称CLI)，供工程师用于添加和升级现有语料库、管理语音包版本：首先，在AWS上编写CloudFormation模板搭建语音转文字的Web服务，并在CLI中添加对应的调用命令和相应参数，用以在本地生成多语言语音语料。然后，在CLI中添加上传、下载语音文件和上传语音包到内部storage服务器的接口，并加入本地缓存机制加速下载。对车载系统部分，在播放语音请求的消息原型中加入语音名称，初始化语音模块时使用Linux的ALSA驱动将音频流加载进内存，并在语音模块接到播放请求消息时播放。}
 		\resumeItemListEnd
@@ -249,37 +279,20 @@
 		
 		\resumeSubheading
 		{爱彼迎}{中国，北京}
-		{软件工程师实习生 - Web全栈}{2018年6月 - 2018年9月}
+		{实习工程师 - Web全栈}{2018年6月 - 2018年9月}
 		\resumeItemListStart
 		\resumeItem{房东回顾页面}
-		{开发房东回顾页面。在Ruby On Rails框架下实现相关的Endpoints和移动段前端页面，与设计师讨论确定前端页面的样式和内容。}
+		{moWeb场景，Ruby On Rails框架，参与页面设计，独立完成前后端实现。}
 		\resumeItemListEnd
 		
 		\resumeSubheading
 		{旷视科技}{中国，北京}
-		{炼丹实习生}{2018年1月 - 2018年6月}
+		{实习炼丹师 - CV算法}{2018年1月 - 2018年6月}
 		\resumeItemListStart
 		\resumeItem{模型搜索}
-		{在实习期前半段，由于用输入网络的图片空间维度增加了$14\%$，我们希望能够在不牺牲模型性能的前提下，通过模型压缩将的CNN(卷积神经网络)的FLOPs(每秒钟浮点运算量)降低到先前的水平。这里模型性能使用万一通过率（ROC 曲线上$\frac{1}{10,000}$时纵坐标的值）来衡量。最终通过对网络中 Inception-ResNet 模块加入 bottleneck 层将输入特征图层数压缩一半的方式使该问题得以解决。在实习期后半段，我们希望借鉴最新的 CNN 结构研究成果进一步提升用于移动端人脸识别模块的性能。在对一些经典网络结构如 Xception、DenseNet 进行测试以后，我提出了一种基于 Google Inception V4 的网络结构用于产品：首先,先前网络中全部使用相同的 Inception-ResNet 模块，而我针对网络中浅层、中 层、深层使用不同结构的模块。另一方面，我通过将$N \times N$卷积核替换为$1 \times N$与$N \times 1$卷积核串联的方式增加了网络容量。最终实验结果显示，上述网络结构使得模型性能在大多数数据集上提升了一个百分点。}
+		{背靠vivoX21人脸识别项目，研究移动端CNN模型，先通过加入bottleneck层在不提高运算开销的前提下提升模型$14\%$的原始图片处理能力，后通过使用$2$个串联的$1$维卷积核替代原$N$维卷积核将模型万一通过率（ROC 曲线上$\frac{1}{10,000}$对应纵坐标的值）从 $72\%$ 提升至 $73\%$。}
 		\resumeItemListEnd
 		
-		\resumeSubheading
-		{北京航空航天大学}{中国，北京}
-		{硕士研究生}{2015年1月 - 2016年5月}
-		\resumeItemListStart
-		\resumeItem{第五代移动通信网络}
-		{在导师指导下提出一种利用上行数据及信道稀疏特性提升信道估计质量的方法，使得网络吞吐量提升了$28\%$。\\以第一作者合作发表于中文核心期刊《信号处理》。DOI: 10.16798/j.issn.1003-0530.2017.06.002}
-		\resumeItemListEnd
-		
-		\resumeSubHeadingListEnd
-		
-		
-		%-----------Competitions-----------------
-		\section{Coding能力}
-		\resumeSubHeadingListStart
-		\resumeSubheading
-		{Google Code Jam Kickstart 2017 Round F}{}
-		{前 $5\%$, 全球排名 $108^{th}$。 \href{https://codejam.withgoogle.com/codejam/contest/7254486/scoreboard\#sp=91}{\textbf{计分板链接（id:WeiYong1024）}}}{}
 		
 		\resumeSubHeadingListEnd
 		
@@ -302,11 +315,15 @@
 		\section{技术栈}
 		\resumeSubHeadingListStart
 		\item{
-			\textbf{编程语言}{: C++, Python最常用；使用过Shell, JavaScript}
+			\textbf{底层架构}{: 云计算底座，集群高可用架构}
 			\hfill
 		}
 		\item{
-			\textbf{工具}{： 使用过AWS, Google Cloud, Kubernetes, React}
+			\textbf{应用架构}{: Web系统，自动驾驶系统，人脸识别系统，应用运维系统}
+			\hfill
+		}
+		\item{
+			\textbf{编程语言}{: Java, C++, Python为主要工作语言}
 			\hfill
 		}
 		\resumeSubHeadingListEnd
