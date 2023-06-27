@@ -88,7 +88,7 @@
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{\href{https://weiyong.org}{\Large Yong Wei}} & Email : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
-		\textit{Increase production capacity and happniess for every one} & Mobile : (+86) 173-7657-1024 \\
+		\textit{Make changes} & Mobile : (+86) 173-7657-1024 \\
 	\end{tabular*}
 	
 	
@@ -97,10 +97,10 @@
 	\resumeSubHeadingListStart
 	\resumeSubheading
 	{Master - EE - Beihang University}{Beijing, China}
-	{Exempt Entry Exam; Finish courses and research publishing by the end of the $1^{st}$ semester}{Sep. 2016 -- Jan. 2019}
+	{Exempt Entry Exam; Finish courses and research publishing mission during the $1^{st}$ semester}{Sep. 2016 -- Jan. 2019}
 	\resumeSubheading
 	{Bachelor - EE - Beihang University}{Beijing, China}
-	{Exempt NCEE; Honors College(top 50 among 3000+ freshmen);  GPA: 3.7}{Sept. 2012 -- Jun. 2016}
+	{Exempt NCEE; Honors College(top 50 among 3000+ freshmen);  GPA 3.7}{Sept. 2012 -- Jun. 2016}
 	\resumeSubHeadingListEnd
 	
 	
@@ -115,92 +115,93 @@
 	
 	
 	%-----------EXPERIENCE-----------------
-	\section{Experience}
+	\section{Career}
 	\resumeSubHeadingListStart
 	
 	\resumeSubheading
-	{Alibaba Cloud}{Hangzhou, China}
-	{Senior Software Engineer}{Aug 2020 - Now}
+	{Mindverse}{Hangzhou，PRC}
+	{TechLead - Infrastructure. leading team}{Jun. 2022 - Now}
 	\resumeItemListStart
-	\resumeItem{Apsara stack - application level ops system}
-	{Lead the team to develop the app-level ops system for government affairs related apps, which composed of 3 main sub-system including app-ops-center, resource-ops-center and collection-ops-center. Functionalities are provided such as CMDB, monitoring, resource-operating, app-topology, inspection, reporting. We deploy the system in 4 major city in PRC including 1 demonstration project.}
-	\resumeItem{Apsara stack - platform level ops system}
-	{Lead an 8-member team(5 backend SE, 2 frontend SE, 1 PM including external staff) to refactor the intracompany side ops-platform used by TAM from Alibaba Cloud. Support pipeline for project demand, project delivery-to-operation, service performance tracking to make the processes highly online and normative. And build QA-robot to improve labor efficiency.}
-	\resumeItem{Middleware - network traffic scheduling}
-	{Landing project in Alibaba. As a member of high-availability team, I am in charge of the middle ware for cluster traffic scheduling used by the entire group. During my tenure, the middle are was promoted to empower all Alibaba core service and more than 400K containers are covered by it. The middle ware monitors traffic for every single container, finds outliers in seconds. And abnormal traffic is scheduled and recovered in minutes. Providing escort for 2020 e-commerce festival at 11.11.}
+	\resumeItem{Scope1 - System \& DevOps}
+	{$^1$Successfully implemented company's microservices containerization, cluster orchestration and multiple environments setup for R\&D team. $^2$Managed cloud resources, built multi-cloud architecture in multiple locations, and optimized cloud consts. $^3$Promoted best engineering practices such as Master-Based Development, CodeReview tools and mechanisms. $^4$Developed and maintained internal tools with HA such as GitServer, CICD pipelines and load testing systems. $^5$Designed and constructed GDPR compliant products and services.}
+	\resumeItem{Scope2 - AiInfra}
+	{$^1$Assisted algorithm engineers in conducting various inference experiments with acceleration frameworks such as DeepSpeed, FastTransformer. Supported GPT scheduling, pooling, and other requirements. $^2$Wrapped OpenAI API call layer, created a pool consisting of OpenAI/AzureOpenAI accounts, and enabled algorithm engineers to flexibly invoke GPT inference capabilities based on their needs.}
+	\resumeItem{Scope3 - Data \& BI}
+	{Built online-offline data pipelines from scratch, and implemented multiple dashboards for the company's system water level monitoring, business metrics monitoring, BI data analysis, cost monitoring, and other purposes.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{Aliyun}{Hangzhou，PRC}
+	{Senior SDE - Middleware, backend, leading team}{Aug. 2020 - May. 2022}
+	\resumeItemListStart
+	\resumeItem{Team1 - Alibaba middleware team}
+	{Took over and developed the group's traffic scheduling middleware, which managed all core applications within Alibaba Group, supported over 400,000 containers, and provided cluster-level, second-level traffic scheduling at the individual container dimension, outlying point discovery, minute-level traffic isolation and recovery. This middleware played a crucial role in ensuing the smooth running of the 2020 Double 11 shopping festival.}
+	\resumeItem{Team2 - Private cloud}
+	{Participated in the development of a private cloud operation and maintenance system for the government and was fully responsible for the backend of the application operation center subsystem(which accounted for 1/3 for the completed system). Was fully responsible for the product delivery to six customers across the country and worked with outsourced teams to complete it within two days. Succeeded in support in various projects including the 2021 Elementary School Project and the 2022 Spring Festival Nucleic Acid Project.}
 	\resumeItemListEnd
 	
 	\resumeSubheading
-	{Pony.ai}{Beijing, China}
-	{Software Engineer - Infrastructure}{Feb 2019 - Mar 2020}
+	{Pony.ai}{Beijing，PRC}
+	{SDE - Infrastructure}{Feb. 2019 - Mar. 2020}
 	\resumeItemListStart
-	\resumeItem{Voice Logging Pipeline}
-	{Provide the voice logging pipeline to enable single-onboard operator. In this solution, a pair of microphone(for recording) and hand button(for trigger) is equipped for each self-driving vehicle (SDV). First importing the opensource library evdev with BSD license as the input event interface. Then writing a daemon processing based on evdev and ALSA driver from Linux to check the hardware, who listens to signal from the hand button and FIFO connected with the onboard main process, triggers or stops the microphone, and saves the audio files during trips. For the data processing part, first building the speech-to-text service on Google Cloud Platform. Then extract the content from audio files into text. Finally serializing the meta-info by Google Protobuf and create issues by current issue-reporting pipeline.}
-	\resumeItem{Car Sound Workflow}
-	{The original Car Sound Module uses Pico library by Google to convert the hardcoded content into audio-stream and then play it out, which is a waste of computing resources and is limited to single Language support. The new car sound module is built on a file-based pipeline, aiming to break those limitations. First, build a internal Python command-line tool (CLI) for engineers to add/update and manage sound suite version: First, write CloudFormation template on AWS to build the Text-to-Speech service, and add a related option in the CLI. Then, add uploading/downloading interface to the storage server in the CLI and enabling local cache. For the onboard part, adding sound names into the sound-request schema, load the audio stream into memory when initializing Car Sound Module, then play the sound when receiving the request.}
+	\resumeItem{Project1 - 车载系统语音模块}
+	{Designed and implemented the voice module in Self Driving Vehicles' onboard system, developed and maintained tools that enabled engineers to customize in-vehicle voice.}
+	\resumeItem{Project2 - 行车录音分发Issue工具链}
+	{In the context of reducing the number of on-board personnel in SDV to a single operator, designed and implemented the entire tool set of driver recording, storage,ASR, and issue distribution.}
 	\resumeItemListEnd
-
+	
 	
 	%--------Multiple Positions Heading------------
-%	    \resumeSubSubheading
-%	     {Software Engineer I}{Oct 2014 - Sep 2016}
-%	     \resumeItemListStart
-%	        \resumeItem{Apache Beam}
-%	          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%	     \resumeItemListEnd
-%	    \resumeSubHeadingListEnd
+	%	    \resumeSubSubheading
+	%	     {Software Engineer I}{Oct 2014 - Sep 2016}
+	%	     \resumeItemListStart
+	%	        \resumeItem{Apache Beam}
+	%	          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+	%	     \resumeItemListEnd
+	%	    \resumeSubHeadingListEnd
 	
 	
-	\resumeSubheading
-	{Airbnb}{Beijing, China}
-	{Software Engineer Intern - Web Full Stack}{Jun 2018 - Sep 2018}
-	\resumeItemListStart
-	\resumeItem{Host Retrospect Page}
-	{Retrospect page for Airbnb host users on mobile devices, which is build on Ruby On Rails. Also participant in the design work.}
-	\resumeItemListEnd
+	\resumeSubHeadingListEnd
 	
-	\resumeSubheading
-	{Megvii (Face++)}{Beijing, China}
-	{Research Intern}{Jan 2018 - Jun 2018}
-	\resumeItemListStart
-	\resumeItem{Model Search}
-	{Participant in the project for VIVO X21 phone, where my job is to optimize the CNN model. First, by adding a bottleneck layer before the Inception-ResNet module, the performance is improved by $14\%$ without additional FLOPS(float operations per second) overhead. Then, after replacing some $N \times N$ convolutional kernels by a sequence of $1 \times N$ and $N \times 1$ kernels,the $\frac{1}{10,000}$ passing rate(ROC value when $x=\frac{1}{10,000}$) is improved by $1\%$ on most benchmarks.}
-	\resumeItemListEnd
-	
+	\section{Internship}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{Airbnb}{: In the summer of 2018, Airbnb expanded into the Chinese market, and as one of the first 8 interns in the Mainland China office, developed the domestic version of the annual host review page with full-stack tech.}
+		\hfill
+	}
+	\item{
+		\textbf{Megvii(Face++)}{: During the cooperation between Megvii and VIVO in early 2018, participated in the development of the facial recognition module for the X21 model and conducted mobile model search optimization based on InceptionV3(a type of CNN) for mobile devices.}
+		\hfill
+	}
 	\resumeSubHeadingListEnd
 	
 	
 	%-----------PROJECTS-----------------
-%	\section{Projects}
-%	\resumeSubHeadingListStart
-%	\resumeSubItem{QuantSoftware Toolkit}
-%	{Open source python library for financial data analysis and machine learning for finance.}
-%	\resumeSubItem{Github Visualization}
-%	{Data Visualization of Git Log data using D3 to analyze project trends over time.}
-%	\resumeSubItem{Recommendation System}
-%	{Music and Movie recommender systems using collaborative filtering on public datasets.}
-%	\resumeSubItem{Mac Setup}
-%	{Book that gives step by step instructions on setting up developer environment on Mac OS.}
-%	\resumeSubHeadingListEnd
+	%	\section{Projects}
+	%	\resumeSubHeadingListStart
+	%	\resumeSubItem{QuantSoftware Toolkit}
+	%	{Open source python library for financial data analysis and machine learning for finance.}
+	%	\resumeSubItem{Github Visualization}
+	%	{Data Visualization of Git Log data using D3 to analyze project trends over time.}
+	%	\resumeSubItem{Recommendation System}
+	%	{Music and Movie recommender systems using collaborative filtering on public datasets.}
+	%	\resumeSubItem{Mac Setup}
+	%	{Book that gives step by step instructions on setting up developer environment on Mac OS.}
+	%	\resumeSubHeadingListEnd
 	
 	
 	%--------PROGRAMMING SKILLS------------
-	\section{Skill Stack}
-	  \resumeSubHeadingListStart
-	    \item{
-	      \textbf{Bottom architecture}{: Cloud computing system, high available cluster architecture}
-	      \hfill
-	    }
-       \item{
-       	  \textbf{Applicational architecture}{: Web, self driving vehicle, face recognition, application ops platform}
-       	  \hfill
-       	}
-    	\item{
-    	  \textbf{Programming languages}{: Java, C++ and Python are the top 3 most commonly used}
-    	  \hfill
-    	}
-	  \resumeSubHeadingListEnd
-	  	
+	\section{System experience \& Tech stack}
+	\resumeSubHeadingListStart
+	\item{
+		\textbf{System experience}{: LLM, Cloud computing, HA, DevOps, Self driving vehicles}
+		\hfill
+	}
+	\item{
+		\textbf{Tech stack}{: Java、Python、Kubernetes and so on}
+		\hfill
+	}
+	\resumeSubHeadingListEnd
+	
 	\end{spacing}
 	
 	
@@ -209,12 +210,12 @@
 	\newpage
 	
 	%---------SPACING FOR CHINESE PAGE---------
-	\begin{spacing}{0.96}
+	\begin{spacing}{0.94}
 		
 		%----------HEADING-----------------
 		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-			\textbf{\href{https://weiyong.org}{\Large 魏雍}} & 邮箱 : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
-			\textit{让每个人更幸福地提高产能} & Mobile : (+86) 173-7657-1024 \\
+			\textbf{\href{https://weiyong.org}{\Large 魏雍}} & \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
+			\textit{变革与自我变革} & (+86) 173-7657-1024 \\
 		\end{tabular*}
 		
 		
@@ -222,11 +223,11 @@
 		\section{教育背景}
 		\resumeSubHeadingListStart
 		\resumeSubheading
-		{硕士 - 北京航空航天大学 - 电子与通信工程}{中国，北京}
-		{保研; 研一上发表核心期刊; 北京市优干}{2016年1月 -- 2019年1月}
+		{硕士 - 北航 - 电子与通信工程}{中国，北京}
+		{保研; 研一上发核心期刊达毕业标准; 北京市优干}{2016年1月 -- 2019年1月}
 		\resumeSubheading
-		{本科 - 北京航空航天大学 - 电子信息工程}{中国，北京}
-		{高中物理竞赛保送; 沈元荣誉学院(入学top50/3000+); 北京市三好; GPA: 3.7}{2012年9月 -- 2016年6月}
+		{本科 - 北航 - 电子信息工程}{中国，北京}
+		{物理竞赛保送; 沈元荣誉学院(入学top50/3000+); 北京市三好; GPA 3.7}{2012年9月 -- 2016年6月}
 		\resumeSubHeadingListEnd
 		
 		
@@ -245,25 +246,34 @@
 		\resumeSubHeadingListStart
 		
 		\resumeSubheading
-		{阿里云}{中国，杭州}
-		{高级工程师}{2020年8月 - 至今}
+		{心识宇宙}{中国，杭州}
+		{TechLead - 基础设施、带4人团队}{2022年6月 - 至今}
 		\resumeItemListStart
-		\resumeItem{混合云产品 - 智能云管平台}
-		{带虚线团队构建适用于混合云上政务应用的通用运维系统。集成应用运维中心、资源运营中心、总集管理中心三大子系统，在通用信息管理系统的基础上，提供云资源级别和业务级别的监控告警、资源运营、应用拓扑、巡检播报等功能。以一个标杆项目为重点建设，在全国四个主要城市部署该系统。护航2021某省会城市小学入学等项目。}
-		\resumeItem{混合云产品 - 运维管控平台}
-		{带8人虚线团队（5后端、2前端、1产品），重构混合云中心侧运维平台，支撑混合云项目变更流程、混合云交付转运维流程，构建服务履约线上跟踪能力，构建工具使用答疑机器人。提升运维人效，实现运维流程线上化、规范化。}
-		\resumeItem{基础中间件 - 流量调度}
-		{来阿里的landing项目，作为高可用团队的一员，负责阿里云内部流量调度中间件。任职期间，推广产品纳管了阿里集团全部核心应用，支撑40W+容器，提供集群单容器维度秒级流量监控、离群点发现、分钟级流量调度与恢复链路。护航2020年双十一双峰平稳进行。}
+		\resumeItem{Scope1 - System \& DevOps}
+		{从零到一实现：$^1$公司微服务容器化、上集群编排、产研多套环境搭建；$^2$云资源管理，搭建多地、多云架构，优化用云成本；$^3$工程最佳实践：主推主干开发、CodeReview工具与机制；$^4$内部工具及其高可用：如GitServer、CICD流水线、压测系统等；$^5$GDPR标准产品隐私合规建设。等等。}
+		\resumeItem{Scope2 - AiInfra}
+		{$^1$协助算法同学进行多种推理加速框架（如DeepSpeed、FastTransformer等）的推理实验，支持GPU调度、池化等需求；$^2$封装OpenAI的API调用层，混合不同模型权限OpenAI账号池、AzureOpenAI账号池，让算法团队用好GPT的模型能力。等等。}
+		\resumeItem{Scope3 - Data \& BI}
+		{从零到一搭建在离线数据Pipeline，并实现多种大盘，用于公司系统水位监控、业务指标监控、业务BI数据分析、成本监控等。}
+		\resumeItemListEnd
+		\resumeSubheading
+		{阿里云}{中国，杭州}
+		{高级工程师 - 中间件、web后端、带虚线团队}{2020年8月 - 2022年5月}
+		\resumeItemListStart
+		\resumeItem{所在团队1 - 集团中间件}
+		{接手并开发集团流量调度中间件。上线功能纳管了阿里集团全部核心应用，支撑40W+容器，提供集群单容器维度秒级流量监控、离群点发现、分钟级流量调度与恢复链路。护航2020年双十一双峰平稳进行。}
+		\resumeItem{所在团队2 - 专有云}
+		{参与开发一款2G的基于阿里云专有云底座上的运维管理系统——智能云管，全权负责云上应用运维中心子系统（占完整系统的1/3）的后端设计实现。全权负责产品对全国6个局点的交付，实现纯外包团队2日交付一个现场。重保郑州2021小学入学项目、2022春节核酸项目等。}
 		\resumeItemListEnd
 		
 		\resumeSubheading
 		{小马智行}{中国，北京}
-		{工程师 - 基础架构}{2019年2月 - 2020年3月}
+		{工程师 - 基础设施}{2019年2月 - 2020年3月}
 		\resumeItemListStart
-		\resumeItem{行车录音工具链}
-		{增加通过语音记录issue的流程供司机使用以支持单人单车运营。为此新增麦克风和按钮作为硬件方案，首先在Bazel项目中引入基于BSD软件许可的输入设备接口库evdev，并基于该库和Linux的ALSA音频驱动实现负责硬件检测、监听来自外部按钮的信号和车载系统进程的管道信息、触发与停止麦克风录音的守护进程sound\_recorder，在行车过程中将issue信息以音频文件的形式存储下来。数据处理阶段，在谷歌云上搭建语音转文字服务，提取音频文件内容，序列化后对接Issue汇报流程将相关问题发至QA。}
-		\resumeItem{车载语音系统}
-		{原有的车载语音模块使用 Google 的 Pico 文字转语音工具库在行车过程中将硬编码的语音内容文本实时播放，从而导致文字转语音的过程需要耗费车载计算资源，同时语言被限制只能使用英文。新的车载语音系统使用基于音频文件的工作流程，旨在减少计算量并支持语音的I18N。为此首先用Python编写内部click命令行工具car\_sound\_utils(以下简称CLI)，供工程师用于添加和升级现有语料库、管理语音包版本：首先，在AWS上编写CloudFormation模板搭建语音转文字的Web服务，并在CLI中添加对应的调用命令和相应参数，用以在本地生成多语言语音语料。然后，在CLI中添加上传、下载语音文件和上传语音包到内部storage服务器的接口，并加入本地缓存机制加速下载。对车载系统部分，在播放语音请求的消息原型中加入语音名称，初始化语音模块时使用Linux的ALSA驱动将音频流加载进内存，并在语音模块接到播放请求消息时播放。}
+		\resumeItem{代表项目1 - 车载系统语音模块}
+		{设计并实现无人车载系统中的语音模块，开发并维护让工程师定制语音的工具。}
+		\resumeItem{代表项目2 - 行车录音分发Issue工具链}
+		{在当年希望无人车日常随车人数从2降到1的大目标下，设计并实现车内司机录音、存储、ASR、Issue分发的整条链路。}
 		\resumeItemListEnd
 		
 		
@@ -277,23 +287,18 @@
 		%	    \resumeSubHeadingListEnd
 		
 		
-		\resumeSubheading
-		{爱彼迎}{中国，北京}
-		{实习工程师 - Web全栈}{2018年6月 - 2018年9月}
-		\resumeItemListStart
-		\resumeItem{房东回顾页面}
-		{moWeb场景，Ruby On Rails框架，参与页面设计，独立完成前后端实现。}
-		\resumeItemListEnd
+		\resumeSubHeadingListEnd
 		
-		\resumeSubheading
-		{旷视科技}{中国，北京}
-		{实习炼丹师 - CV算法}{2018年1月 - 2018年6月}
-		\resumeItemListStart
-		\resumeItem{模型搜索}
-		{背靠vivoX21人脸识别项目，研究移动端CNN模型，先通过加入bottleneck层在不提高运算开销的前提下提升模型$14\%$的原始图片处理能力，后通过使用$2$个串联的$1$维卷积核替代原$N$维卷积核将模型万一通过率（ROC 曲线上$\frac{1}{10,000}$对应纵坐标的值）从 $72\%$ 提升至 $73\%$。}
-		\resumeItemListEnd
-		
-		
+		\section{实习经历}
+		\resumeSubHeadingListStart
+		\item{
+			\textbf{爱彼迎}{: 2018年夏，爱彼迎发力中国市场，作为大陆首批8个实习生，全栈开发了当年国内版房东年度回顾页。}
+			\hfill
+		}
+		\item{
+			\textbf{旷视科技}{: 2018年初，旷视和VIVO合作期间，参与X21机型人脸识别模组的研发，做基于InceptionV3（一种CNN）移动端模型搜索优化。}
+			\hfill
+		}
 		\resumeSubHeadingListEnd
 		
 		
@@ -312,18 +317,14 @@
 		
 		
 		%--------PROGRAMMING SKILLS------------
-		\section{技术栈}
+		\section{行业经历与技术栈}
 		\resumeSubHeadingListStart
 		\item{
-			\textbf{底层架构}{: 云计算底座，集群高可用架构}
+			\textbf{系统经验}{：大模型、 云计算、高可用、DevOps、自动驾驶}
 			\hfill
 		}
 		\item{
-			\textbf{应用架构}{: Web系统，自动驾驶系统，人脸识别系统，应用运维系统}
-			\hfill
-		}
-		\item{
-			\textbf{编程语言}{: Java, C++, Python为主要工作语言}
+			\textbf{技术栈}{：Java、Python、Kubernetes等}
 			\hfill
 		}
 		\resumeSubHeadingListEnd
