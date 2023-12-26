@@ -83,7 +83,7 @@
 \begin{document}
 	
 	%---------SPACING FOR ENGLISH PAGE---------
-	\begin{spacing}{0.86}
+	\begin{spacing}{1.0}
 	
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -119,55 +119,55 @@
 	\resumeSubHeadingListStart
 	
 	\resumeSubheading
-	{Mindverse AI(MindOS}{Hangzhou, PRC}
-	{Infra Tech Lead (4-person team), Kubernetes, Docker, OpenAI, Java, Linux, Azure, Tencent Cloud}{Jun. 2022 - Now}
+	{Mindverse AI(Company of the LLM agent platform MindOS)}{Hangzhou, PRC}
+	{Infra Tech Lead (4-person team), System Design, Kubernetes, Java, OpenAI, Azure, Tencent Cloud}{Jun. 2022 - Now}
 	\begin{itemize}
-		\item \textbf{DevOps}
+		\item \textbf{Technical Scope Led - Extreme Attention to Detail, Pursuit of Best Engineering Practices}
 		\begin{itemize}
-			\item
-			\textbf{Multi-cluster Environment Management: }All microservices containerized and deployed on Kubernetes; Built Dev/Test/Pre/Prod multi-cluster architecture based on Kubernetes; Created a distributed GitServer (Gitlab) using Helm, ensuring code maintainability across the company through Ownership and Readability-based CodeReview pipelines; Developed a distributed CI/CD pipeline (Jenkins) incorporating packaging, approval, deployment, and regression, using Helm, Jenkins, Python, Shell, etc., with scalable parallel build and deployment capabilities.
-			\item
-			\textbf{Production Tool System Construction: }Managed private networking; Set up and maintained distributed configuration centers (Apollo, Nacos), rate limiting (Sentinel), and other middleware; Implemented operational tools (Rancher, JumpServer, Octant, etc.); Worked on offline data tools (MySQL, Redis, Clickhouse, Superset, Grafana, etc.); Managed logging and application performance monitoring tools (Loki, DataDog, Tencent Cloud CLS, Skywalking, etc.), providing all necessary tools for tech development.
-			\item
-			\textbf{Cloud Resource Management: }Responsible for the lifecycle management of the company's IaaS and SaaS resources, user permission management, and precise control of cloud and third-party service costs, creating and maintaining cost dashboards.
+			\item \textbf{AiInfra - The foundational layer for large models in business applications}
+			\begin{itemize}
+				\item \textbf{OpenAI Base Layer: }Designed and built mid-tier services to manage OpenAI and Azure OpenAI assets, encapsulating their services. Responsibilities included, but were not limited to, managing Azure OpenAI service regions, instances, deployments, and model versions, as well as pooling OpenAI accounts with proactive/passive health checks, weight distribution, and other availability mechanisms.
+				\item \textbf{Mutil-LLM Encapsulation: }Provided encapsulation services for the algorithm team, integrating third-party SaaS large models such as OpenAI GPT, Google Gemini/Palm2, and implemented cost monitoring for various business lines and features.
+				\item \textbf{GPU Computing Scheduling Platform: }Researched and designed a GPU compute scheduling platform for training tasks as a technical reserve, which was not implemented due to the company's strategic focus on AI-Agent layer only.
+			\end{itemize}
+			
+			\item \textbf{Production Tools \& DevOps - The complete set of production environment and tools}
+			\begin{itemize}
+				\item \textbf{Multi-cluster Environment Management: }Designed, built, and maintained a data system from OLTP (MySQL) -> CDC (external provider) -> OLAP (Clickhouse) -> DataVisualization (Superset+Grafana) for offline data development, and a message queue (RocketMQ) -> basic services (Springboot) based asynchronous data stream for scenarios like user behavior analysis. Provided dashboards and reporting tools for metrics of interest to product, R\&D, and operations colleagues.
+				\item \textbf{Production Tool System Construction: }Selected, designed, and built internal production tools. Responsible for internal networking, internet access management; unified distributed configuration centers (Apollo, Nacos), rate limiting (Sentinel), etc.; set up operation tools (Rancher, JumpServer, Octant); managed offline data tools (MySQL, Redis, Clickhouse, Superset, Grafana); and logging and application performance monitoring tools (Loki, DataDog, Tencent Cloud CLS, Skywalking). Provided all necessary tools for technical research and development.
+				\item \textbf{Cloud Resource Management: }Managed the lifecycle of company's IaaS, SaaS resources, user permission management, and controlled costs for cloud and third-party services. Designed, created, and maintained cost dashboards.
+			\end{itemize}
+			
+			\item \textbf{Data \& BI — Managing data assets, experimental tools, data-driven decision making}
+			\begin{itemize}
+				\item \textbf{Online and Offline Data System: }Built and maintained an online/offline data stream based on OLTP (MySQL) -> CDC (external supplier) -> OLAP (Clickhouse) -> DataVisualization (Superset+Grafana), used for data development, anonymization, etc., and an asynchronous data stream based on message queue (RocketMQ) -> basic service (Springboot), for user behavior data analysis. Served as a dashboard and reporting tool for product, development, and operations teams.
+				\item \textbf{A/B Testing Tool System: }Selected, designed, built, and maintained a complete experimental tool system including experiment configuration/result analysis platform (GrowthBook) + frontend tracking (GoogleAnalytics) + backend tracking (implemented in Springboot, including engineering and algorithms). Supported experiments and feature toggles for front-end, pages, and algorithms.
+				\item \textbf{Product Privacy Compliance: }Implemented a series of privacy compliance standards based on Vanta, including data anonymization, internal training, etc., to ensure the company's product MindOS met USDP and GDPR standards.
+			\end{itemize}
+			
+			\item \textbf{Business Layer Development - Providing fundamental services for business development}
+			\begin{itemize}
+				\item \textbf{Middle Platform Services: }Designed and built mid-tier basic microservices, offering common foundational services to business systems like backend encrypted storage, user privacy database, web crawlers, offline data warehouse management, etc., and delivered them in forms of RestfulAPI, secondary libraries + RPC interfaces, etc.
+			\end{itemize}
 		\end{itemize}
-		
-		\item
-		\textbf{AI Infra}
+		\item \textbf{Business Support}
 		\begin{itemize}
-			\item
-			\textbf{OpenAI Base Layer: }Built Springboot services for the algorithm team, encapsulating basic services - for OpenAI accounts, implemented pooling and proactive/passive health checks, traffic scheduling for availability, including concepts of AzureOpenAIService's region, service instances, deployment, and model versions.
-			\item
-			\textbf{Mutil-LLM Encapsulation: }Provided the algorithm team with a service layer for interfacing with large models from third-party SaaS services like OpenAI GPT and Google Plam2, and implemented automated cost monitoring.
-			\item
-			\textbf{GPU Computing Scheduling Platform: }Designed a GPU computing scheduling platform for training tasks, but it remained a technical reserve due to company strategy.
+			\item Led mobile app mini-programs and web product MindOS's subsystems \& full-link load testing, and safeguarded the global launch processe; prepared and established SOPs for toB public cloud/private cloud/private deployment; supported service architecture migration across countries/cloud regions as per business needs.
 		\end{itemize}
-		
-		\item
-		\textbf{Data\&BI}
+		\item \textbf{Team Influence}
 		\begin{itemize}
-			\item
-			\textbf{Online and Offline Data System: }Built and maintained an online/offline data stream based on OLTP (MySQL) -> CDC (external supplier) -> OLAP (Clickhouse) -> DataVisualization (Superset+Grafana), used for data development, anonymization, etc., and an asynchronous data stream based on message queue (RocketMQ) -> basic service (Springboot), for user behavior data analysis. Served as a dashboard and reporting tool for product, development, and operations teams.
-			\item
-			\textbf{A/B Testing Tool System: }Developed and maintained an entire experiment tool system, including experiment configuration/result analysis platform (GrowthBook), front-end embedding (GoogleAnalytics), and back-end embedding (Springboot implementation, including engineering and algorithm). Supported front-end, page, and algorithm experiments and switches.
-			\item
-			\textbf{Product Privacy Compliance: }Implemented a series of privacy compliance standards based on Vanta, including but not limited to data anonymization, internal training, etc., ensuring MindOS met USDP and GDPR standards.
-		\end{itemize}
-		
-		\item
-		\textbf{Business Layer Development}
-		\begin{itemize}
-			\item
-			\textbf{Middleware Basic Services: }Provided generic basic services like encrypted storage, web crawlers, offline data read-write for business backend systems, output in forms of RestfulAPI, binary libraries, RPC interfaces, etc.
+			\item Promoted a company-wide blameless postmortem culture, organized safety production weekly meetings.
+			\item Designed, built, and promoted a code review mechanism based on OwnershipReview and ReadabilityReview across the company, strictly ensuring the maintainability of the company's codebase from a process perspective.
+			\item Directly managed a team of 3 full-time employees.
 		\end{itemize}
 	\end{itemize}
 	
 	\resumeSubheading
 	{Alibaba Cloud}{Hangzhou, PRC}
-	{Senior Engineer (P6 like GoogleL4), Backend, Java, Springboot, Alibaba Cloud}{Aug. 2020 - May. 2022}
+	{Senior Engineer, Backend, Java, Springboot, Alibaba Cloud}{Aug. 2020 - May. 2022}
 	\resumeItemListStart
 	\resumeItem{Traffic Scheduling Middleware: }
-	{In the high-availability team at Alibaba Cloud, responsible for internal traffic scheduling middleware. This Java project, based on Alibaba's internal PandoraBoot (an enhanced version of Springboot), provides container-level second-by-second health monitoring on the cluster, $3\sigma$outlier detection, and implements minute-level traffic scheduling and recovery for microservices using Alibaba's internal RPC framework HSF's weight table mechanism. During my tenure, the product was integrated into all core applications of Alibaba Group, supporting over 400,000 containers, and served as a core security component safeguarding the peak traffic of 600,000 QPS during the 2020 Double Eleven shopping festival.}
+	{In the group's high-availability team, responsible for Alibaba Cloud's internal traffic scheduling middleware. Utilizing Alibaba's internal PandoraBoot (an enhanced version of Springboot), provided container granularity second-level health monitoring and$3\sigma$outlier detection on the cluster. Leveraged the weight table mechanism of Alibaba's internal RPC framework HSF for minute-level traffic scheduling and recovery linkage of microservices. This system prevented cluster avalanches caused by single-point failures and was also used for JIT preheating. During my tenure, the product was integrated into all core applications of Alibaba Group, supporting over 400,000 containers, and served as a core security component safeguarding the peak traffic of 600,000 QPS during the 2020 Double Eleven shopping festival.}
 	\resumeItem{Private Cloud Management Platform}
 	{As part of the P8 team, the goal was to build a private cloud management system for government scenarios. Developed using the Java framework Springboot, the system is divided into three subsystems: application operations, resource operations, and general management. I was responsible for backend development of the application operations center subsystem. The subsystem’s base layer included cloud resource listing, monitoring and inspection, usage statistics, custom interface inspection, SQL inspection, etc. On top of this, we built expert reports such as slow SQL statistical analysis, business dashboards, and health check reports. This system is currently commercially deployed in over 6 locations nationwide, supporting projects like elementary school admissions in a provincial capital city in 2021 and nucleic acid testing during the 2022 Spring Festival.}
 	\resumeItem{Lightweight Delivery for Government Cloud Management}
@@ -228,11 +228,11 @@
 	\section{System experience \& Tech stack}
 	\resumeSubHeadingListStart
 	\item{
-		\textbf{System experience}{: LLM, Cloud computing, HA, DevOps, Self driving vehicles}
+		\textbf{System experience}{: LLM agent platform, Cloud computing, HA, DevOps, Self driving vehicles, etc.}
 		\hfill
 	}
 	\item{
-		\textbf{Tech stack}{: Java, Python, Kubernetes and so on}
+		\textbf{Tech stack}{: Java, Python, Kubernetes, C++, etc.}
 		\hfill
 	}
 	\resumeSubHeadingListEnd
@@ -293,7 +293,7 @@
 					\item \textbf{GPU算力调度平台：}调研设计针对训练任务的GPU算力调度平台作为技术储备，但由于公司将战略定在只做AI-Agent层而未实施。
 				\end{itemize}
 				
-				\item \textbf{生产工具\&DevOps —— 提供全套内部生产工具}
+				\item \textbf{生产工具\&DevOps —— 提供全套生产环境与工具}
 				\begin{itemize}
 					\item \textbf{多套集群环境管理：}设计并构建基于Kubernetess的多套环境集群架构；全部微服务容器化并上Kubernetes；提供基于Helm的分布式GitServer（Gitlab）并在全司层面设置严格的CodeReview流水线；基于Helm、Jenkins、Python、Shell等工具构建分布式的包含打包、审批、发布、回归一体的CICD流水线（Jenkins），具备可伸缩的并行构建发布能力。
 					\item \textbf{生产工具体系构建：}选型、设计并构建公司内部生产工具。负责公司内部组网、科学上网等网络环境管理；设计并统一分布式配置中心（Apollo、Nacos）、限流（Sentinel）等中间件；搭建运维工具（Rancher、JumpServer、Octant等）；在离线数据工具体系（MySQL、Redis、Clickhouse、Superset、Grafana等）；日志及应用性能监控工具（Loki、DataDog、腾讯云CLS、Skywalking等）。提供技术研发需要的全部工具。
@@ -332,7 +332,7 @@
 		{高级工程师、后端、Java、Springboot、阿里云}{2020年8月 - 2022年5月}
 		\resumeItemListStart
 		\resumeItem{流量调度中间件}
-		{在集团高可用团队负责阿里云内部流量调度中间件。Java项目，基于阿里内部的PandoraBoot（Springboot加强版）提供集群上容器粒度秒级健康指标监控、$3\sigma$离群点检测，依托阿里内部RPC框架HSF的权重表机制实现微服务的分钟级流量调度与恢复链路。任职期间推广产品纳管了阿里集团全部核心应用，支撑 40w+ 容器，作为核心安全组件护航 2020 双十一60wQPS流量洪峰。}
+		{在集团高可用团队负责阿里云内部流量调度中间件。基于阿里内部的PandoraBoot（Springboot加强版）提供集群上容器粒度秒级健康指标监控、$3\sigma$离群点检测，依托阿里内部RPC框架HSF的权重表机制实现微服务的分钟级流量调度与恢复链路。防单点故障引起的集群雪崩，也可用于JIT预热。任职期间推广产品纳管了阿里集团全部核心应用，支撑 40w+ 容器，作为核心安全组件护航 2020 双十一60wQPS流量洪峰。}
 		\resumeItem{私有云管理平台}
 		{时年P8团队目标建设政务场景下的专有云管理系统。基于Java框架Springboot开发，该系统分应用运维、资源运营、总集管理三个子系统。我负责其中应用运维中心子系统的后端开发。应用运维中心底层构建云资源列表、监控巡检、用量统计、自定义接口巡检、SQL巡检等原子能力，并在上层此构建了慢 SQL 统计分析、业务大盘、体检报告等专家报表。该系统目前在全国超过 6 个局点商业化输出，重保护航 2021 某省会城市小学入学等项目、2022 春节核酸检测等项目。}
 		\resumeItem{政务云管轻量化交付}
