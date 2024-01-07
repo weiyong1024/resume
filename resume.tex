@@ -14,7 +14,7 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks, colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -88,7 +88,7 @@
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{\href{https://weiyong.org}{\Large Yong Wei}} & Email : \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
-		\textit{Make changes} & Mobile : (+86) 173-7657-1024 \\
+		\textit{\href{https://github.com/weiyong1024}{Github}} & Mobile : (+86) 173-7657-1024 \\
 	\end{tabular*}
 	
 	
@@ -119,7 +119,7 @@
 	\resumeSubHeadingListStart
 	
 	\resumeSubheading
-	{Mindverse AI(Startup of the LLM agent platform MindOS)}{Hangzhou, PRC}
+	{Mindverse AI(Startup of the LLM agent platform \href{https://mindos.com}{MindOS})}{Hangzhou, PRC}
 	{Infra Tech Lead (4-person team), System Design, Kubernetes, Java, OpenAI, Azure, Tencent Cloud}{Jun. 2022 - Now}
 	\begin{itemize}
 		\item \textbf{Technical Responsibilities - Extreme Attention to Detail, Pursuit of Best Engineering Practices}
@@ -131,14 +131,14 @@
 				\item \textbf{GPU Computing Scheduling Platform: }Researched and designed a GPU compute scheduling platform for training tasks as a technical reserve, which was not implemented due to the company's strategic focus on AI-Agent layer only.
 			\end{itemize}
 			
-			\item \textbf{Production Tools \& DevOps - The complete set of production environment and tools}
+			\item \textbf{DevInfra - The complete set of production environment and tools}
 			\begin{itemize}
 				\item \textbf{Multi-cluster Environment Management: }Designed and built multiple environment cluster architectures based on Kubernetes; containerized all microservices and deployed them on Kubernetes; provided a Helm-based distributed GitServer (Gitlab), and developed a company-wide code review mechanism based on OwnershipReview and ReadabilityReview to strictly ensure the engineering maintainability of the entire codebase; constructed a distributed CI/CD pipeline (Jenkins) using Helm, Jenkins, Python, Shell, etc., which includes packaging, approval, deployment, and regression, with scalable parallel build and release capabilities.
 				\item \textbf{Production Tool System Construction: }Selected, designed, and built internal production tools. Responsible for internal networking, internet access management; unified distributed configuration centers (Apollo, Nacos), rate limiting (Sentinel), etc.; set up operation tools (Rancher, JumpServer, Octant); managed offline data tools (MySQL, Redis, Clickhouse, Superset, Grafana); and logging and application performance monitoring tools (Loki, DataDog, Tencent Cloud CLS, Skywalking). Provided all necessary tools for technical research and development.
 				\item \textbf{Cloud Resource Management: }Managed the lifecycle of company's IaaS, SaaS resources, user permission management, and controlled costs for cloud and third-party services. Designed, created, and maintained cost dashboards.
 			\end{itemize}
 			
-			\item \textbf{Data \& BI — Managing data assets, experimental tools, data-driven decision making}
+			\item \textbf{DataInfra \& BI — Data assets, experimental tools, data-driven decision making}
 			\begin{itemize}
 				\item \textbf{Online and Offline Data System: }Built and maintained an online/offline data stream based on OLTP (MySQL) -> CDC (external supplier) -> OLAP (Clickhouse) -> DataVisualization (Superset+Grafana), used for data development, anonymization, etc., and an asynchronous data stream based on message queue (RocketMQ) -> basic service (Springboot), for user behavior data analysis. Served as a dashboard and reporting tool for product, development, and operations teams.
 				\item \textbf{A/B Testing Tool System: }Selected, designed, built, and maintained a complete experimental tool system including experiment configuration/result analysis platform (GrowthBook) + frontend tracking (GoogleAnalytics) + backend tracking (implemented in Springboot, including engineering and algorithms). Supported experiments and feature toggles for front-end, pages, and algorithms.
@@ -245,7 +245,7 @@
 		%----------HEADING-----------------
 		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 			\textbf{\href{https://weiyong.org}{\Large 魏雍}} & \href{mailto:weiyong1024@gmail.com}{weiyong1024@gmail.com}\\
-			\textit{Make changes} & (+86) 173-7657-1024 \\
+			\textit{\href{https://github.com/weiyong1024}{Github}} & (+86) 173-7657-1024 \\
 		\end{tabular*}
 		
 		
@@ -276,7 +276,7 @@
 		\resumeSubHeadingListStart
 		
 		\resumeSubheading
-		{心识宇宙（大模型Agent平台创业公司，产品MindOS）}{中国，杭州}
+		{心识宇宙（大模型Agent平台创业公司，产品\href{https://mindos.com}{MindOS}）}{中国，杭州}
 		{基础设施主管（4人团队）、基建系统设计、Kubernetes、Java、OpenAI、Azure、腾讯云等}{2022年6月 - 至今}
 		\begin{itemize}
 			\item \textbf{技术职责 —— 极至细节，追求最佳工程实践}
@@ -288,14 +288,14 @@
 					\item \textbf{GPU算力调度平台：}调研设计针对训练任务的GPU算力调度平台作为技术储备，但由于公司将战略定在只做AI-Agent层而未实施。
 				\end{itemize}
 				
-				\item \textbf{生产工具\&DevOps —— 提供全套生产环境与工具}
+				\item \textbf{DevInfra —— 提供全套生产环境与工具}
 				\begin{itemize}
 					\item \textbf{多套集群环境管理：}设计并构建基于Kubernetess的多套环境集群架构；全部微服务容器化并上Kubernetes；提供基于Helm的分布式GitServer（Gitlab）,于其上设计、构建并在全司推广基于OwnershipReview和ReadbilityReview的代码审核机制，从流程上严格保证全司代码库代码的工程可维护性；基于Helm、Jenkins、Python、Shell等工具构建分布式的包含打包、审批、发布、回归一体的CICD流水线（Jenkins），具备可伸缩的并行构建发布能力。
 					\item \textbf{生产工具体系构建：}选型、设计并构建公司内部生产工具。负责公司内部组网、科学上网等网络环境管理；设计并统一分布式配置中心（Apollo、Nacos）、限流（Sentinel）等中间件；搭建运维工具（Rancher、JumpServer、Octant等）；在离线数据工具体系（MySQL、Redis、Clickhouse、Superset、Grafana等）；日志及应用性能监控工具（Loki、DataDog、腾讯云CLS、Skywalking等）。提供技术研发需要的全部工具。
 					\item \textbf{云资源管理：}负责公司IaaS、SaaS资源生命周期管理，用户权限管理，精细化管控用云、用三方服务的成本。设计、制作及维护成本大盘。
 				\end{itemize}
 				
-				\item \textbf{Data\&BI —— 管理数据资产、提供实验工具、数据驱动决策}
+				\item \textbf{DataInfra\&BI —— 管理数据资产、提供实验工具、数据驱动决策}
 				\begin{itemize}
 					\item     \textbf{在离线数据体系：}设计、构建并维护基于OLTP（MySQL）->CDC（外部供应商）->OLAP（Clickhouse）->DataVisualization（Superset+Grafana）的在离线镜像数据流用于离线数据开发，以及基于消息队列（RocketMQ）->基础服务（Springboot）的异步数据流用于用户行为数据分析等场景。作为产品、研发、运营同事所关心的各类指标的大盘、报表工具。
 					\item
