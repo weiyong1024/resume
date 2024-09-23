@@ -96,11 +96,14 @@
 	\section{Education}
 	\resumeSubHeadingListStart
 	\resumeSubheading
-	{Master - EE - Beihang University}{Beijing, China}
-	{Exempt Entry Exam; Finish courses and research publishing mission during the $1^{st}$ semester}{Sep. 2016 -- Jan. 2019}
+	{Master - EE - Beihang University}{Beijing, PRC}
+	{Exempt Entry Exam; Finish courses and research publishing mission during the $1^{st}$ semester.}{Sep. 2016 -- Jan. 2019}
 	\resumeSubheading
-	{Bachelor - EE - Beihang University}{Beijing, China}
-	{Exempt NCEE; Honors College(top 50 among 3000+ freshmen);  GPA 3.7}{Sept. 2012 -- Jun. 2016}
+	{Bachelor - EE - Beihang University}{Beijing, PRC}
+	{Honors College(top 50 among 3000+ freshmen.);  GPA 3.7.}{Sept. 2012 -- Jun. 2016}
+	\resumeSubheading
+	{High School - Dalian Yuming High School}{Dalian, PRC}
+	{CPhO - Provincial First Prize, granted exemption from the college entrance examination.}{Sept. 2012 -- Jun. 2016}
 	\resumeSubHeadingListEnd
 	
 	
@@ -118,44 +121,62 @@
 	\section{Career}
 	\resumeSubHeadingListStart
 	
+	
 	\resumeSubheading
-	{\href{https://mindverse.ai}{Mindverse}(Startup of the LLM agent platform \href{https://mindos.com}{MindOS})}{Hangzhou, PRC}
-	{Infra Tech Lead (4-person team), System Design, Kubernetes, Java, OpenAI, Azure, Tencent Cloud}{Jun. 2022 - Now}
+	{\href{https://home.mindos.com}{Mindverse}(Joined angel round, a pioneering startup for LLM app)}{Hangzhou，PRC}
+	{Infra Tech Lead(4-person team), building AiInfra+DataInfra+DevOps for LLM applications.}{Jun. 2022 - Now}
 	\begin{itemize}
-		\item \textbf{Technical Responsibilities - Extreme Attention to Detail, Pursuit of Best Engineering Practices}
+		\item \textbf{Company representative products}
 		\begin{itemize}
-			\item \textbf{AiInfra - The foundational layer for large models in business applications}
+			\item \href{https://mindos.com}{\textbf{MindOS}}: Early LLMAgentPlatform, launched in October 2022, ranked first in ProductHunt's weekly list in July 2023.
+			\item \textbf{PersonalAI}: All-in-one personal assistant product, ranked first in ProductHunt weekly list in February 2024.
+			\item \href{https://me.bot}{\textbf{MeBot}}: Inspiring personal assistant, Web version ranked second in the ProductHunt weekly list in August 2024, App version is now available on the Apple App Store.
+		\end{itemize}
+		\item \textbf{Company technical design}
+		\begin{itemize}
+			\item {\textbf{UMM}}: Unified mind model. 16 months earlier than OpenAI first proposed the concept of AIAgent.
+			\item {\textbf{MindOS}}: The earliest LLM Agent Platform in China, launched 17 months earlier than ByteDance's Coze platform.
+			\item {\textbf{LPM}}: Large personal model. Based on Lora and user online data to train personalized LLM, which can be used in production environments.
+		\end{itemize}
+		\item \textbf{Infra Technology Responsibilities}
+		\begin{itemize}
+			\item \textbf{AiInfra - Best practices for building infra of LLM based application}
 			\begin{itemize}
-				\item \textbf{OpenAI Base Layer: }Designed and built mid-tier services to manage OpenAI and Azure OpenAI assets, encapsulating their services. Responsibilities included, but were not limited to, managing Azure OpenAI service regions, instances, deployments, and model versions, as well as pooling OpenAI accounts with proactive/passive health checks, weight distribution, and other availability mechanisms.
-				\item \textbf{Mutil-LLM Encapsulation: }Provided encapsulation services for the algorithm team, integrating third-party SaaS large models such as OpenAI GPT, Google Gemini/Palm2, and implemented cost monitoring for various business lines and features.
-				\item \textbf{GPU Computing Scheduling Platform: }Researched and designed a GPU compute scheduling platform for training tasks as a technical reserve, which was not implemented due to the company's strategic focus on AI-Agent layer only.
+				\item \textbf{LLM Unified Access Layer: }In the early stage, Java was used to build basic services, achieving unified access, deployment management, multi-account pooling, health check, weight allocation, cost statistics, and visualization for models such as OpenAI, AzureOpenAI, GCPVertexAI, and Claude. In the later stage, it was migrated to LiteLLM as the best practice to provide the above functions.
+				\item \textbf{LLM Engineering Platform: }Use Langfuse's standardized algorithm for offline experiment management, prompt asset management, asset version management, and online LLM-Tracing functions.
+				\item \textbf{MLOps: }Using ClearML as the MLOps platform for LLM training, train and test the qwen2-7b large model based on production data, supporting \href{https://arxiv.org/abs/2406.18312}{\textbf{paper research}} and production business for LPM(Defined above).
 			\end{itemize}
 			
-			\item \textbf{DevInfra - The complete set of production environment and tools}
+			\item \textbf{DevOps - Safety production}
 			\begin{itemize}
-				\item \textbf{Multi-cluster Environment Management: }Designed and built multiple environment cluster architectures based on Kubernetes; containerized all microservices and deployed them on Kubernetes; provided a Helm-based distributed GitServer (Gitlab), and developed a company-wide code review mechanism based on OwnershipReview and ReadabilityReview to strictly ensure the engineering maintainability of the entire codebase; constructed a distributed CI/CD pipeline (Jenkins) using Helm, Jenkins, Python, Shell, etc., which includes packaging, approval, deployment, and regression, with scalable parallel build and release capabilities.
-				\item \textbf{Production Tool System Construction: }Selected, designed, and built internal production tools. Responsible for internal networking, internet access management; unified distributed configuration centers (Apollo, Nacos), rate limiting (Sentinel), etc.; set up operation tools (Rancher, JumpServer, Octant); managed offline data tools (MySQL, Redis, Clickhouse, Superset, Grafana); and logging and application performance monitoring tools (Loki, DataDog, Tencent Cloud CLS, Skywalking). Provided all necessary tools for technical research and development.
-				\item \textbf{Cloud Resource Management: }Managed the lifecycle of company's IaaS, SaaS resources, user permission management, and controlled costs for cloud and third-party services. Designed, created, and maintained cost dashboards.
+				\item \textbf{Production Environment Management: }Designed and built multiple production environments such as Prod/Pre/Test, including scalable GitServer with strict CodeReview processes, CI/CD processes, zero-trust device management, and other infrastructure. Technologies involved: Gitlab, Helm, Java, Jenkins, JumpServer, Kubernetes, Octant, Python, Rancher, Shell, etc.
+				\item \textbf{System Observability: }Selection, design, and construction of the distributed configuration, distributed rate limiting, distributed scheduling, application performance monitoring, and log monitoring internal production infrastructure used by the company's backend system. Technologies involved: Apollo, Datadog, Grafana, Loki, Nacos, Prometheus, Sentinel, Skywalking, xxl-job, Tencent Cloud CLS, etc.
+				\item \textbf{Cloud and third-party service management: }Internal user permission management, refined control of cloud usage and third-party service costs, design, production, and maintenance cost dashboard. Design technologies: Azure, GCP, CronJob, TencentCloud, etc.
 			\end{itemize}
 			
-			\item \textbf{DataInfra \& BI — Data assets, experimental tools, data-driven decision making}
+			\item \textbf{DataInfra - Data assets, experimental tools, data-driven decision making}
 			\begin{itemize}
-				\item \textbf{Online and Offline Data System: }Built and maintained an online/offline data stream based on OLTP (MySQL) -> CDC (external supplier) -> OLAP (Clickhouse) -> DataVisualization (Superset+Grafana), used for data development, anonymization, etc., and an asynchronous data stream based on message queue (RocketMQ) -> basic service (Springboot), for user behavior data analysis. Served as a dashboard and reporting tool for product, development, and operations teams.
-				\item \textbf{A/B Testing Tool System: }Selected, designed, built, and maintained a complete experimental tool system including experiment configuration/result analysis platform (GrowthBook) + frontend tracking (GoogleAnalytics) + backend tracking (implemented in Springboot, including engineering and algorithms). Supported experiments and feature toggles for front-end, pages, and algorithms.
-				\item \textbf{Product Privacy Compliance: }Implemented a series of privacy compliance standards based on Vanta, including data anonymization, internal training, etc., to ensure the company's product MindOS met USDP and GDPR standards.
+				\item
+				\textbf{Online and Offline Data System： }Design, build, and maintain online and offline data streams including OLTP->CDC->OLAP->DataVisualization for offline data development, and asynchronous data streams including message queue->buried point service for user behavior data analysis and other scenarios. Support various metrics dashboards, operational BI reports, and other requirements. Technologies involved: MySQL, Clickhouse, Debezium, Superset, RocketMQ, etc.
+				\item
+				\textbf{A/B Testing Tools:}Selection, design, construction, and maintenance of a full-link experimental tool system that includes experimental configuration/result analysis platform (GrowthBook) + front-end tracking (Google Analytics) + back-end tracking (Springboot implementation, including engineering and algorithms). Implement feature toggles and A/B testing for front-end pages and back-end algorithms. Technologies involved: Google Analytics, GrowthBook, Java, NodeJS, Python, etc.
+				\item
+				\textbf{Product Privacy Compliance: }Establish a series of privacy compliance standards, including but not limited to data anonymization, internal training, etc., to ensure that the company's products meet the privacy compliance standards of North America's USDP and the EU's GDPR.
 			\end{itemize}
 			
-			\item \textbf{Business Layer Development - Providing fundamental services for business development}
+			\item \textbf{Business Layer Development}
 			\begin{itemize}
-				\item \textbf{Middle Platform Services: }Designed and built mid-tier basic microservices, offering common foundational services to business systems like backend encrypted storage, user privacy database, web crawlers, offline data warehouse management, etc., and delivered them in forms of RestfulAPI, secondary libraries + RPC interfaces, etc.
+				\item \textbf{Middle Platform Services: }Designed and built mid-tier basic microservices, offering common foundational services to business systems like backend encrypted storage, user privacy database,
+				web crawlers, offline data warehouse management, etc., and delivered them in forms of RestfulAPI, secondary libraries + RPC interfaces, etc.
 			\end{itemize}
 		\end{itemize}
 		\item \textbf{Business Support}
 		\begin{itemize}
-			\item Led mobile app mini-programs and web product MindOS's subsystems \& full-link load testing, and safeguarded the global launch processe; prepared and established SOPs for toB public cloud/private cloud/private deployment; supported service architecture migration across countries/cloud regions as per business needs.
+			\item Led mobile app mini-programs and web product MindOS’s subsystems \& full-link load testing, and safeguarded the global launch processe; prepared and established SOPs for toB public cloud/private cloud/private deployment; supported service architecture migration across countries/cloud regions as per business needs.
 			\item Promoted a company-wide blameless postmortem culture, organized safety production weekly meetings.
 		\end{itemize}
 	\end{itemize}
+	
 	
 	\resumeSubheading
 	{\href{https://www.alibabacloud.com/}{Alibaba Cloud}(China's leading cloud service provider)}{Hangzhou, PRC}
@@ -223,11 +244,11 @@
 	\section{System experience \& Tech stack}
 	\resumeSubHeadingListStart
 	\item{
-		\textbf{System experience}{: LLM agent platform, Cloud computing, HA, DevOps, Self driving vehicles, etc.}
+		\textbf{System experience}{: LLM applications, Prompt engineering, MLOps, large-scale distributed systems, high availability, observability, autonomous driving, etc.}
 		\hfill
 	}
 	\item{
-		\textbf{Tech stack}{: Java, Python, Kubernetes, C++, etc.}
+		\textbf{Tech stack}{: Java, Python, Kubernetes, Shell, C++, mainstream clouds services, mainstream DevOps tools, etc.}
 		\hfill
 	}
 	\resumeSubHeadingListEnd
@@ -257,7 +278,10 @@
 		{保研; 研一上学期发核心期刊达毕业标准; 北京市优干}{2016年9月 -- 2019年1月}
 		\resumeSubheading
 		{本科 - 北京航空航天大学 - 电子信息工程}{中国，北京}
-		{物理竞赛保送; 沈元荣誉学院(入学top50/3000+); 北京市三好; GPA 3.7}{2012年9月 -- 2016年6月}
+		{沈元荣誉学院(入学top50/3000+); 北京市三好; GPA 3.7}{2012年9月 -- 2016年6月}
+		\resumeSubheading
+		{高中 - 大连育明高中}{中国，大连}
+		{CPhO（全国中学生物理竞赛）省一等奖获高考免试保送资格}{2009年9月 -- 2012年6月}
 		\resumeSubHeadingListEnd
 		
 		
@@ -276,32 +300,45 @@
 		\resumeSubHeadingListStart
 		
 		\resumeSubheading
-		{\href{https://mindverse.ai}{心识宇宙}（大模型Agent平台创业公司，产品\href{https://mindos.com}{MindOS}）}{中国，杭州}
-		{基础设施主管（4人团队）、基建系统设计、Kubernetes、Java、OpenAI、Azure、腾讯云等}{2022年6月 - 至今}
+		{\href{https://home.mindos.com}{心识宇宙}（天使轮加入，国内LLM应用先驱创业团队）}{中国，杭州}
+		{基础设施技术主管，领导4人团队，构建大模型应用的AiInfra+DataInfra+DevOps体系}{2022年6月 - 至今}
 		\begin{itemize}
-			\item \textbf{技术职责 —— 极至细节，追求最佳工程实践}
+			\item \textbf{公司代表产品}
 			\begin{itemize}
-				\item \textbf{AiInfra —— 公司业务层的大模型能力底座}
+				\item \href{https://mindos.com}{\textbf{MindOS}}：国内早期LLMAgentPlatform，2022.10上线，2023.7获ProductHunt周榜第一。
+				\item \textbf{PersonalAI}：全能个人助理产品，2024.2获ProductHunt周榜第一。
+				\item \href{https://me.bot}{\textbf{MeBot}}：启发型个人助理，Web版于2024.8获ProductHunt周榜第二，App版已上苹果AppStore。
+			\end{itemize}
+			\item \textbf{公司技术设计}
+			\begin{itemize}
+			\item {\textbf{UMM(Unified mind model)}}：统一心识模型，比OpenAI首次提出AIAgent概念早16个月。
+			\item {\textbf{MindOS}}：国内最早的LLM Agent Platform，比字节Coze平台上线时间早17个月。
+			\item {\textbf{LPM(Large personal model)}}：基于Lora与用户在线数据训练个性化LLM，可用于生产环境。
+			\end{itemize}
+						
+			\item \textbf{Infra技术职责}
+			\begin{itemize}
+				\item \textbf{AiInfra —— 打造LLM应用基础设施最佳实践}
 				\begin{itemize}
-					\item \textbf{OpenAI底座层：}设计并构建中台服务管理OpenAI和AzureOpenAI资产并封装其服务。包括但不限于管理AzureOpenAI服务的区域、实例、部署以及模型版本，以及对OpenAI账号池化并在上层进行主动/被动探活、权重分配等可用性机制。
-					\item \textbf{多大模型封装：}针对算法团队封装OpenAI GPT、Google Gemini/Palm2等第三方SaaS服务大模型的调用层服务，并做各业务线、功能点的成本监控。
-					\item \textbf{GPU算力调度平台：}调研设计针对训练任务的GPU算力调度平台作为技术储备，但由于公司将战略定在只做AI-Agent层而未实施。
+					\item \textbf{LLM统一接入层：}前期使用Java自建基础服务，实现OpenAI、AzureOpenAI、GCPVertexAI、Claude等模型的统一接入、部署管理、多账号池化、探活、权重分配、成本统计与可视化等功能。后期迁移至LiteLLM作为提供上述功能的最佳实践。
+					\item \textbf{LLM工程平台：}使用Langfuse标准化算法离线实验管理、Prompt资产管理、资产版本管理、线上LLM-Tracing等功能。
+					\item \textbf{MLOps解决方案：}使用ClearML作为LLM训练的MLOps平台，用生产数据训练、测试基于qwen2-7b大模型，支持LPM的\href{https://arxiv.org/abs/2406.18312}{\textbf{论文研究}}和生产业务。
 				\end{itemize}
 				
-				\item \textbf{DevInfra —— 提供全套生产环境与工具}
+				\item \textbf{DevOps —— 安全生产}
 				\begin{itemize}
-					\item \textbf{多套集群环境管理：}设计并构建基于Kubernetess的多套环境集群架构；全部微服务容器化并上Kubernetes；提供基于Helm的分布式GitServer（Gitlab）,于其上设计、构建并在全司推广基于OwnershipReview和ReadbilityReview的代码审核机制，从流程上严格保证全司代码库代码的工程可维护性；基于Helm、Jenkins、Python、Shell等工具构建分布式的包含打包、审批、发布、回归一体的CICD流水线（Jenkins），具备可伸缩的并行构建发布能力。
-					\item \textbf{生产工具体系构建：}选型、设计并构建公司内部生产工具。负责公司内部组网、科学上网等网络环境管理；设计并统一分布式配置中心（Apollo、Nacos）、限流（Sentinel）等中间件；搭建运维工具（Rancher、JumpServer、Octant等）；在离线数据工具体系（MySQL、Redis、Clickhouse、Superset、Grafana等）；日志及应用性能监控工具（Loki、DataDog、腾讯云CLS、Skywalking等）。提供技术研发需要的全部工具。
-					\item \textbf{云资源管理：}负责公司IaaS、SaaS资源生命周期管理，用户权限管理，精细化管控用云、用三方服务的成本。设计、制作及维护成本大盘。
+					\item \textbf{生产环境管理：}设计并搭建Prod/Pre/Test等多套生产环境，包含严格CodeReview流程的可伸缩GitServer、CI/CD流程、零信任设备管理等基础设施。涉及技术：Gitlab、Helm、Java、Jenkins、JumpServer、Kubernetes、Octant、Python、Rancher、Shell等。
+					\item \textbf{系统可观测性：}选型、设计并构建公司后台系统使用的分布式配置、分布式限流、分布式调度、应用性能监控及日志监控内部生产等基础设施。涉及技术：Apollo、Datadog、Grafana、Loki、Nacos、Prometheus、Sentinel、Skywalking、xxl-job、腾讯云CLS等。
+					\item \textbf{云及三方服务管理：}公司内部用户权限管理，精细化管控用云、用三方服务的成本，设计、制作及维护成本大盘。设计技术：Azure、GCP、CronJob、TencentCloud等。
 				\end{itemize}
 				
-				\item \textbf{DataInfra\&BI —— 管理数据资产、提供实验工具、数据驱动决策}
+				\item \textbf{DataInfra —— 管理数据资产、提供实验工具、数据驱动决策}
 				\begin{itemize}
-					\item     \textbf{在离线数据体系：}设计、构建并维护基于OLTP（MySQL）->CDC（外部供应商）->OLAP（Clickhouse）->DataVisualization（Superset+Grafana）的在离线镜像数据流用于离线数据开发，以及基于消息队列（RocketMQ）->基础服务（Springboot）的异步数据流用于用户行为数据分析等场景。作为产品、研发、运营同事所关心的各类指标的大盘、报表工具。
+					\item     \textbf{在离线数据体系：}设计、构建并维护包含OLTP->CDC->OLAP->DataVisualization的在离线数据流用于离线数据开发，包含消息队列->埋点服务的异步数据流用于用户行为数据分析等场景。支撑各类指标的大盘、运营BI报表等需求。涉及技术：MySQL、Clickhouse、Debezium、Superset、RocketMQ等。
 					\item
-					\textbf{A/BTest工具体系：}选型、设计、构建并维护包含实验配置/结果分析平台（GrowthBook）+前端埋点（GoogleAnalytics）+后端埋点（Springboot实现，包含工程和算法）的一整套实验工具体系。支撑前端、页面、算法等开关和实验。
+					\textbf{A/BTest工具体系：}选型、设计、构建并维护包含实验配置/结果分析平台（GrowthBook）+前端埋点（GoogleAnalytics）+后端埋点（Springboot实现，包含工程和算法）的全链路实验工具体系。实现前端页面、后端算法的功能开关和A/B实验。涉及技术：GoogleAnalytics、GrowthBook、Java、NodeJS、Python等。
 					\item
-					\textbf{产品隐私合规：}基于Vanta提供的一系列隐私合规标准，包括但不限于数据脱敏、内部培训等，让公司产品MindOS达到USDP和GDPR标准。
+					\textbf{产品隐私合规：}构建一系列隐私合规标准，包括但不限于数据脱敏、内部培训等，使公司产品达到北美USDP和欧盟GDPR隐私合规标准。
 				\end{itemize}
 				
 				\item \textbf{业务层研发 —— 提供业务开发依赖的基础服务}
@@ -311,7 +348,7 @@
 			\end{itemize}
 			\item \textbf{支撑业务}
 			\begin{itemize}
-				\item 主导移动端小程序万物总动员、Web端产品MindOS的子系统和全链路压测、发布过程的重保；准备并制定toB公有云/专有云/私有化产品交付SOP；服务架构随业务跨国/跨云地域迁移等。
+				\item 主导移动端小程序万物总动员、Web端产品MindOS、App MeBot及各种子系统的全链路压测、发布过程重保；准备并制定toB公有云/专有云/私有化产品交付SOP；服务架构随业务跨国/跨云地域迁移等。
 				\item 在全公司横向推进blameless postmortem文化，组织安全生产周会。
 			\end{itemize}
 		\end{itemize}
@@ -322,7 +359,7 @@
 		{高级工程师、后端、Java、Springboot、阿里云}{2020年8月 - 2022年5月}
 		\resumeItemListStart
 		\resumeItem{流量调度中间件}
-		{在集团高可用团队负责阿里云内部流量调度中间件。基于阿里内部的PandoraBoot（Springboot加强版）提供集群上容器粒度秒级健康指标监控、$3\sigma$离群点检测，依托阿里内部RPC框架HSF的权重表机制实现微服务的分钟级流量调度与恢复链路。防单点故障引起的集群雪崩，也可用于JIT预热。任职期间推广产品纳管了阿里集团全部核心应用，支撑 40w+ 容器，作为核心安全组件护航 2020 双十一60wQPS流量洪峰。}
+		{在集团高可用团队负责阿里云内部流量调度中间件。基于阿里内部的PandoraBoot（Springboot加强版）提供集群上容器粒度秒级健康指标监控、$3\sigma$离群点检测，依托阿里内部RPC框架HSF(Dubbo内部版)的权重表机制实现微服务的分钟级流量调度与恢复链路。防单点故障引起的集群雪崩，也可用于JIT预热。任职期间推广产品纳管了阿里集团全部核心应用，支撑 40w+ 容器，作为核心安全组件护航 2020 双十一60wQPS流量洪峰。}
 		\resumeItem{私有云管理平台}
 		{时年P8团队目标建设政务场景下的专有云管理系统。基于Java框架Springboot开发，该系统分应用运维、资源运营、总集管理三个子系统。我负责其中应用运维中心子系统的后端开发。应用运维中心底层构建云资源列表、监控巡检、用量统计、自定义接口巡检、SQL巡检等原子能力，并在上层此构建了慢 SQL 统计分析、业务大盘、体检报告等专家报表。该系统目前在全国超过 6 个局点商业化输出，重保护航 2021 某省会城市小学入学等项目、2022 春节核酸检测等项目。}
 		\resumeItem{政务云管轻量化交付}
@@ -380,14 +417,14 @@
 		
 		
 		%--------PROGRAMMING SKILLS------------
-		\section{行业经历与技术栈}
+		\section{系统经验与技术栈}
 		\resumeSubHeadingListStart
 		\item{
-			\textbf{系统经验}{：大模型Agent Platform、云计算、集群高可用、DevOps、自动驾驶等}
+			\textbf{系统经验}{：LLM应用、Prompt工程、MLOps、超大规模分布式系统、高可用、可观测性、自动驾驶等}
 			\hfill
 		}
 		\item{
-			\textbf{技术栈}{：Java、Python、Kubernetes、C++等}
+			\textbf{技术栈}{：Java、Python、Kubernetes、Shell、C++、国内外主流云、主流运维工具等}
 			\hfill
 		}
 		\resumeSubHeadingListEnd
