@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.20)  24 SEP 2024 10:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.20)  19 NOV 2024 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,20 +571,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 83.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 90.
+(Font)              <10.95> on input line 89.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 90.
+(Font)              <8> on input line 89.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 90.
+(Font)              <6> on input line 89.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 100.
 
-
-LaTeX Font Warning: Font shape `TU/SongtiSCLight(0)/m/sc' undefined
-(Font)              using `TU/SongtiSCLight(0)/m/n' instead on input line 97.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 116.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 116.
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 4.08003pt, for example:
@@ -593,6 +589,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 ]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[2]
 
 Package fontspec Warning: Font "STFangsong" does not contain requested Script
 (fontspec)                "CJK".
@@ -625,7 +627,23 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
 
-[2] (./resume.aux)
+[3]
+
+LaTeX Font Warning: Font shape `TU/SongtiSCLight(0)/m/sc' undefined
+(Font)              using `TU/SongtiSCLight(0)/m/n' instead on input line 272.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[4]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[5] (./resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -634,16 +652,22 @@ L3 programming layer <2022/07/14>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: B092DDC6677C1BE0399EAF667310E8E7;407.
+
+Package rerunfilecheck Warning: File `resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume.out':
+(rerunfilecheck)             Before: B092DDC6677C1BE0399EAF667310E8E7;407
+(rerunfilecheck)             After:  5C2F40542C46E9DFB0FD5BB4B1CBCEF8;1032.
  ) 
 Here is how much of TeX's memory you used:
- 16443 strings out of 474773
- 365438 string characters out of 5757724
- 1973839 words of memory out of 5000000
- 38354 multiletter control sequences out of 15000+600000
+ 16467 strings out of 474773
+ 367098 string characters out of 5757724
+ 1965839 words of memory out of 5000000
+ 38378 multiletter control sequences out of 15000+600000
  563734 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,97p,505b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,97p,1217b,872s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on resume.pdf (2 pages).
+Output written on resume.pdf (5 pages).

@@ -128,26 +128,25 @@
 	\begin{itemize}
 		\item \textbf{Company representative products}
 		\begin{itemize}
-			\item \href{https://mindos.com}{\textbf{MindOS}}: Early LLMAgentPlatform, launched in October 2022, ranked first in ProductHunt's weekly list in July 2023.
-			\item \textbf{PersonalAI}: All-in-one personal assistant product, ranked first in ProductHunt weekly list in February 2024.
 			\item \href{https://me.bot}{\textbf{MeBot}}: Inspiring personal assistant, Web version ranked second in the ProductHunt weekly list in August 2024, App version is now available on the Apple App Store.
+			\item \href{https://mindos.com}{\textbf{MindOS}}: Early LLMAgentPlatform, launched in October 2022, ranked first in ProductHunt's weekly list in July 2023.
 		\end{itemize}
 		\item \textbf{Company technical design}
 		\begin{itemize}
-			\item {\textbf{UMM}}: Unified mind model. 16 months earlier than OpenAI first proposed the concept of AIAgent.
-			\item {\textbf{MindOS}}: The earliest LLM Agent Platform in China, launched 17 months earlier than ByteDance's Coze platform.
 			\item {\textbf{LPM}}: Large personal model. Based on Lora and user online data to train personalized LLM, which can be used in production environments.
+			\item {\textbf{MindOS}}: The earliest LLM Agent Platform in China, launched 17 months earlier than ByteDance's Coze platform.
+			\item {\textbf{UMM}}: Unified mind model. 16 months earlier than OpenAI first proposed the concept of AIAgent.
 		\end{itemize}
 		\item \textbf{Infra Technology Responsibilities}
 		\begin{itemize}
 			\item \textbf{AiInfra - Best practices for building infra of LLM based application}
 			\begin{itemize}
+				\item \textbf{MLOps Platform: }Design and implement a full-link automated MLOps platform that includes data collection, data augmentation, LLM training, and LLM deployment. Combine the model observation capabilities of the open-source tool ClearML to support real-time LPM training and production deployment..
 				\item \textbf{LLM Unified Access Layer: }In the early stage, Java was used to build basic services, achieving unified access, deployment management, multi-account pooling, health check, weight allocation, cost statistics, and visualization for models such as OpenAI, AzureOpenAI, GCPVertexAI, and Claude. In the later stage, it was migrated to LiteLLM as the best practice to provide the above functions.
 				\item \textbf{LLM Engineering Platform: }Use Langfuse's standardized algorithm for offline experiment management, prompt asset management, asset version management, and online LLM-Tracing functions.
-				\item \textbf{MLOps: }Using ClearML as the MLOps platform for LLM training, train and test the qwen2-7b large model based on production data, supporting \href{https://arxiv.org/abs/2406.18312}{\textbf{paper research}} and production business for LPM(Defined above).
 			\end{itemize}
 			
-			\item \textbf{DevOps - Safety production}
+			\item \textbf{DevOps - Efficient and safe production}
 			\begin{itemize}
 				\item \textbf{Production Environment Management: }Designed and built multiple production environments such as Prod/Pre/Test, including scalable GitServer with strict CodeReview processes, CI/CD processes, zero-trust device management, and other infrastructure. Technologies involved: Gitlab, Helm, Java, Jenkins, JumpServer, Kubernetes, Octant, Python, Rancher, Shell, etc.
 				\item \textbf{System Observability: }Selection, design, and construction of the distributed configuration, distributed rate limiting, distributed scheduling, application performance monitoring, and log monitoring internal production infrastructure used by the company's backend system. Technologies involved: Apollo, Datadog, Grafana, Loki, Nacos, Prometheus, Sentinel, Skywalking, xxl-job, Tencent Cloud CLS, etc.
@@ -244,7 +243,7 @@
 	\section{System experience \& Tech stack}
 	\resumeSubHeadingListStart
 	\item{
-		\textbf{System experience}{: LLM applications, Prompt engineering, MLOps, large-scale distributed systems, high availability, observability, autonomous driving, etc.}
+		\textbf{System experience}{: MLOps, LLM applications, Prompt engineering, large-scale distributed systems, high availability, observability, autonomous driving, etc.}
 		\hfill
 	}
 	\item{
@@ -304,27 +303,26 @@
 		\begin{itemize}
 			\item \textbf{公司代表产品}
 			\begin{itemize}
-				\item \href{https://mindos.com}{\textbf{MindOS}}：国内早期LLMAgentPlatform，2022.10上线，2023.7获ProductHunt周榜第一。
-				\item \textbf{PersonalAI}：全能个人助理产品，2024.2获ProductHunt周榜第一。
 				\item \href{https://me.bot}{\textbf{MeBot}}：启发型个人助理，Web版于2024.8获ProductHunt周榜第二，App版已上苹果AppStore。
+				\item \href{https://mindos.com}{\textbf{MindOS}}：国内早期LLMAgentPlatform，2022.10上线，2023.7获ProductHunt周榜第一。
 			\end{itemize}
 			\item \textbf{公司技术设计}
 			\begin{itemize}
+				\item {\textbf{LPM(Large personal model)}}：基于Lora与用户在线数据训练个性化LLM，可用于生产环境。
+				\item {\textbf{MindOS}}：国内最早的LLM Agent Platform，比字节Coze平台上线时间早17个月。
 			\item {\textbf{UMM(Unified mind model)}}：统一心识模型，比OpenAI首次提出AIAgent概念早16个月。
-			\item {\textbf{MindOS}}：国内最早的LLM Agent Platform，比字节Coze平台上线时间早17个月。
-			\item {\textbf{LPM(Large personal model)}}：基于Lora与用户在线数据训练个性化LLM，可用于生产环境。
 			\end{itemize}
 						
 			\item \textbf{Infra技术职责}
 			\begin{itemize}
 				\item \textbf{AiInfra —— 打造LLM应用基础设施最佳实践}
 				\begin{itemize}
+					\item \textbf{MLOps平台：}设计并实施包含数据采集、数据增强、LLM训练、LLM部署的全链路自动化MLOps平台。结合开源工具ClearML的模型观测能力，用于支撑LPM实时训练并做生产部署。
 					\item \textbf{LLM统一接入层：}前期使用Java自建基础服务，实现OpenAI、AzureOpenAI、GCPVertexAI、Claude等模型的统一接入、部署管理、多账号池化、探活、权重分配、成本统计与可视化等功能。后期迁移至LiteLLM作为提供上述功能的最佳实践。
 					\item \textbf{LLM工程平台：}使用Langfuse标准化算法离线实验管理、Prompt资产管理、资产版本管理、线上LLM-Tracing等功能。
-					\item \textbf{MLOps解决方案：}使用ClearML作为LLM训练的MLOps平台，用生产数据训练、测试基于qwen2-7b大模型，支持LPM的\href{https://arxiv.org/abs/2406.18312}{\textbf{论文研究}}和生产业务。
 				\end{itemize}
 				
-				\item \textbf{DevOps —— 安全生产}
+				\item \textbf{DevOps —— 高效、安全生产}
 				\begin{itemize}
 					\item \textbf{生产环境管理：}设计并搭建Prod/Pre/Test等多套生产环境，包含严格CodeReview流程的可伸缩GitServer、CI/CD流程、零信任设备管理等基础设施。涉及技术：Gitlab、Helm、Java、Jenkins、JumpServer、Kubernetes、Octant、Python、Rancher、Shell等。
 					\item \textbf{系统可观测性：}选型、设计并构建公司后台系统使用的分布式配置、分布式限流、分布式调度、应用性能监控及日志监控内部生产等基础设施。涉及技术：Apollo、Datadog、Grafana、Loki、Nacos、Prometheus、Sentinel、Skywalking、xxl-job、腾讯云CLS等。
@@ -419,7 +417,7 @@
 		\section{系统经验与技术栈}
 		\resumeSubHeadingListStart
 		\item{
-			\textbf{系统经验}{：LLM应用、Prompt工程、MLOps、超大规模分布式系统、高可用、可观测性、自动驾驶等}
+			\textbf{系统经验}{：MLOps、LLM应用、Prompt工程、超大规模分布式系统、高可用、可观测性、自动驾驶等}
 			\hfill
 		}
 		\item{
