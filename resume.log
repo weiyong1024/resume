@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.20)  19 NOV 2024 17:54
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.20)  7 APR 2025 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -630,7 +630,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [3]
 
 LaTeX Font Warning: Font shape `TU/SongtiSCLight(0)/m/sc' undefined
-(Font)              using `TU/SongtiSCLight(0)/m/n' instead on input line 272.
+(Font)              using `TU/SongtiSCLight(0)/m/n' instead on input line 283.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -652,22 +652,16 @@ L3 programming layer <2022/07/14>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: B092DDC6677C1BE0399EAF667310E8E7;407
-(rerunfilecheck)             After:  5C2F40542C46E9DFB0FD5BB4B1CBCEF8;1032.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: DC2CACF73060DDF0E84C8B7A62BC7B55;1212.
  ) 
 Here is how much of TeX's memory you used:
- 16467 strings out of 474773
- 367098 string characters out of 5757724
- 1965839 words of memory out of 5000000
- 38378 multiletter control sequences out of 15000+600000
+ 16443 strings out of 474773
+ 365438 string characters out of 5757724
+ 1967839 words of memory out of 5000000
+ 38354 multiletter control sequences out of 15000+600000
  563734 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,11n,97p,1217b,872s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,11n,97p,1217b,971s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on resume.pdf (5 pages).
