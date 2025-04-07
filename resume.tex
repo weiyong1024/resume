@@ -117,6 +117,17 @@
 	\resumeSubHeadingListEnd
 	
 	
+	%-----------OPEN SOURCE-----------------
+	\section{Open Source}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{\href{https://github.com/mindverse/Second-Me}{Second-Me}}{}
+	{PMC role, gained 6K+ stars within one week of launch}{}
+	
+	\small{Proposed and implemented a solution for training large models on personal data using personal computers, and created a new type of social network based on personal models.}
+	\resumeSubHeadingListEnd
+	
+	
 	%-----------EXPERIENCE-----------------
 	\section{Career}
 	\resumeSubHeadingListStart
@@ -128,26 +139,25 @@
 	\begin{itemize}
 		\item \textbf{Company representative products}
 		\begin{itemize}
-			\item \href{https://mindos.com}{\textbf{MindOS}}: Early LLMAgentPlatform, launched in October 2022, ranked first in ProductHunt's weekly list in July 2023.
-			\item \textbf{PersonalAI}: All-in-one personal assistant product, ranked first in ProductHunt weekly list in February 2024.
 			\item \href{https://me.bot}{\textbf{MeBot}}: Inspiring personal assistant, Web version ranked second in the ProductHunt weekly list in August 2024, App version is now available on the Apple App Store.
+			\item \href{https://www.secondme.io/}{\textbf{Second Me}}: Open-source personal LLM training, deployment, and model network technical framework, launched in March 2025, gained 6K+ stars in the first week.
 		\end{itemize}
 		\item \textbf{Company technical design}
 		\begin{itemize}
-			\item {\textbf{UMM}}: Unified mind model. 16 months earlier than OpenAI first proposed the concept of AIAgent.
-			\item {\textbf{MindOS}}: The earliest LLM Agent Platform in China, launched 17 months earlier than ByteDance's Coze platform.
 			\item {\textbf{LPM}}: Large personal model. Based on Lora and user online data to train personalized LLM, which can be used in production environments.
+			\item {\textbf{MindOS}}: The earliest LLM Agent Platform in China, launched 17 months earlier than ByteDance's Coze platform.
+			\item {\textbf{UMM}}: Unified mind model. 16 months earlier than OpenAI first proposed the concept of AIAgent.
 		\end{itemize}
 		\item \textbf{Infra Technology Responsibilities}
 		\begin{itemize}
 			\item \textbf{AiInfra - Best practices for building infra of LLM based application}
 			\begin{itemize}
+				\item \textbf{MLOps Platform: }Design and implement a full-link automated MLOps platform that includes data collection, data augmentation, LLM training, and LLM deployment. Combine the model observation capabilities of the open-source tool ClearML to support real-time LPM training and production deployment..
 				\item \textbf{LLM Unified Access Layer: }In the early stage, Java was used to build basic services, achieving unified access, deployment management, multi-account pooling, health check, weight allocation, cost statistics, and visualization for models such as OpenAI, AzureOpenAI, GCPVertexAI, and Claude. In the later stage, it was migrated to LiteLLM as the best practice to provide the above functions.
 				\item \textbf{LLM Engineering Platform: }Use Langfuse's standardized algorithm for offline experiment management, prompt asset management, asset version management, and online LLM-Tracing functions.
-				\item \textbf{MLOps: }Using ClearML as the MLOps platform for LLM training, train and test the qwen2-7b large model based on production data, supporting \href{https://arxiv.org/abs/2406.18312}{\textbf{paper research}} and production business for LPM(Defined above).
 			\end{itemize}
 			
-			\item \textbf{DevOps - Safety production}
+			\item \textbf{DevOps - Efficient and safe production}
 			\begin{itemize}
 				\item \textbf{Production Environment Management: }Designed and built multiple production environments such as Prod/Pre/Test, including scalable GitServer with strict CodeReview processes, CI/CD processes, zero-trust device management, and other infrastructure. Technologies involved: Gitlab, Helm, Java, Jenkins, JumpServer, Kubernetes, Octant, Python, Rancher, Shell, etc.
 				\item \textbf{System Observability: }Selection, design, and construction of the distributed configuration, distributed rate limiting, distributed scheduling, application performance monitoring, and log monitoring internal production infrastructure used by the company's backend system. Technologies involved: Apollo, Datadog, Grafana, Loki, Nacos, Prometheus, Sentinel, Skywalking, xxl-job, Tencent Cloud CLS, etc.
@@ -172,7 +182,7 @@
 		\end{itemize}
 		\item \textbf{Business Support}
 		\begin{itemize}
-			\item Led mobile app mini-programs and web product MindOS’s subsystems \& full-link load testing, and safeguarded the global launch processe; prepared and established SOPs for toB public cloud/private cloud/private deployment; supported service architecture migration across countries/cloud regions as per business needs.
+			\item Led mobile app mini-programs and web product MindOS's subsystems \& full-link load testing, and safeguarded the global launch processe; prepared and established SOPs for toB public cloud/private cloud/private deployment; supported service architecture migration across countries/cloud regions as per business needs.
 			\item Promoted a company-wide blameless postmortem culture, organized safety production weekly meetings.
 		\end{itemize}
 	\end{itemize}
@@ -185,9 +195,9 @@
 	\resumeItem{Traffic Scheduling Middleware: }
 	{In the group's high-availability team, responsible for Alibaba Cloud's internal traffic scheduling middleware. Utilizing Alibaba's internal PandoraBoot (an enhanced version of Springboot), provided container granularity second-level health monitoring and$3\sigma$outlier detection on the cluster. Leveraged the weight table mechanism of Alibaba's internal RPC framework HSF for minute-level traffic scheduling and recovery linkage of microservices. This system prevented cluster avalanches caused by single-point failures and was also used for JIT preheating. During my tenure, the product was integrated into all core applications of Alibaba Group, supporting over 400,000 containers, and served as a core security component safeguarding the peak traffic of 600,000 QPS during the 2020 Double Eleven shopping festival.}
 	\resumeItem{Private Cloud Management Platform}
-	{As part of the P8 team, the goal was to build a private cloud management system for government scenarios. Developed using the Java framework Springboot, the system is divided into three subsystems: application operations, resource operations, and general management. I was responsible for backend development of the application operations center subsystem. The subsystem’s base layer included cloud resource listing, monitoring and inspection, usage statistics, custom interface inspection, SQL inspection, etc. On top of this, we built expert reports such as slow SQL statistical analysis, business dashboards, and health check reports. This system is currently commercially deployed in over 6 locations nationwide, supporting projects like elementary school admissions in a provincial capital city in 2021 and nucleic acid testing during the 2022 Spring Festival.}
+	{As part of the P8 team, the goal was to build a private cloud management system for government scenarios. Developed using the Java framework Springboot, the system is divided into three subsystems: application operations, resource operations, and general management. I was responsible for backend development of the application operations center subsystem. The subsystem's base layer included cloud resource listing, monitoring and inspection, usage statistics, custom interface inspection, SQL inspection, etc. On top of this, we built expert reports such as slow SQL statistical analysis, business dashboards, and health check reports. This system is currently commercially deployed in over 6 locations nationwide, supporting projects like elementary school admissions in a provincial capital city in 2021 and nucleic acid testing during the 2022 Spring Festival.}
 	\resumeItem{Lightweight Delivery for Government Cloud Management}
-	{As a new P9 team member, the goal was to deliver private clouds for government use in 7 regions. Initially, developers used the Rainbond interface to deploy microservices from different teams onto customer K8S clusters, but the complicated configuration led to long delivery cycles. To address this, I developed a lightweight deployment delivery solution using docker-compose, based on generic environment initialization scripts and delivery step documents. By maintaining environment variables for different customer sites, we centralized control and integrated over 20 microservices from various older teams. I edited the WBS and SOP, organized training for outsourced staff on the delivery process, and trained outsourced individuals could deliver or upgrade a site in 2 days. With this solution, the team’s monthly commercial output capacity increased from single to double digits.}
+	{As a new P9 team member, the goal was to deliver private clouds for government use in 7 regions. Initially, developers used the Rainbond interface to deploy microservices from different teams onto customer K8S clusters, but the complicated configuration led to long delivery cycles. To address this, I developed a lightweight deployment delivery solution using docker-compose, based on generic environment initialization scripts and delivery step documents. By maintaining environment variables for different customer sites, we centralized control and integrated over 20 microservices from various older teams. I edited the WBS and SOP, organized training for outsourced staff on the delivery process, and trained outsourced individuals could deliver or upgrade a site in 2 days. With this solution, the team's monthly commercial output capacity increased from single to double digits.}
 	\resumeItemListEnd
 	
 	\resumeSubheading
@@ -216,7 +226,7 @@
 	\section{Internship}
 	\resumeSubHeadingListStart
 	\item{
-		\textbf{Airbnb}{: In the summer of 2018, Airbnb expanded into the Chinese market, and as one of the first 8 interns in the Mainland China office, developed the domestic version of the annual host review page with full-stack tech.}
+		\textbf{Airbnb}{: In summer 2018 when Airbnb expanded into the Chinese market, as one of the first 8 interns in the Mainland China office, developed the domestic version of annual host review page with full-stack tech.}
 		\hfill
 	}
 	\item{
@@ -244,11 +254,11 @@
 	\section{System experience \& Tech stack}
 	\resumeSubHeadingListStart
 	\item{
-		\textbf{System experience}{: LLM applications, Prompt engineering, MLOps, large-scale distributed systems, high availability, observability, autonomous driving, etc.}
+		\textbf{System experience}{: MLOps, LLM applications, Prompt engineering, large-scale distributed systems, high availability, observability, autonomous driving, etc.}
 		\hfill
 	}
 	\item{
-		\textbf{Tech stack}{: Java, Python, Kubernetes, Shell, C++, mainstream clouds services, mainstream DevOps tools, etc.}
+		\textbf{Tech stack}{: Cursor, Java, Python, Kubernetes, Shell, C++, global mainstream cloud services, mainstream DevOps tools, etc.}
 		\hfill
 	}
 	\resumeSubHeadingListEnd
@@ -294,6 +304,17 @@
 		\resumeSubHeadingListEnd
 		
 		
+		%-----------OPEN SOURCE-----------------
+		\section{开源项目}
+		\resumeSubHeadingListStart
+		\resumeSubheading
+		{\href{https://github.com/mindverse/Second-Me}{Second-Me}}{}
+		{项目PMC角色，上线一周获6K+ Star}{}
+		
+		\small{提出并实现一种在个人计算机上基于个人数据训练大模型的解决方案，以及一种基于个人大模型的新型社交网络。}
+		\resumeSubHeadingListEnd
+		
+		
 		%-----------EXPERIENCE-----------------
 		\section{工作经历}
 		\resumeSubHeadingListStart
@@ -304,27 +325,26 @@
 		\begin{itemize}
 			\item \textbf{公司代表产品}
 			\begin{itemize}
-				\item \href{https://mindos.com}{\textbf{MindOS}}：国内早期LLMAgentPlatform，2022.10上线，2023.7获ProductHunt周榜第一。
-				\item \textbf{PersonalAI}：全能个人助理产品，2024.2获ProductHunt周榜第一。
 				\item \href{https://me.bot}{\textbf{MeBot}}：启发型个人助理，Web版于2024.8获ProductHunt周榜第二，App版已上苹果AppStore。
+				\item \href{https://www.secondme.io/}{\textbf{Second Me}}：开源个人大模型训练、部署、模型网络技术框架，于2025.3上线，第一周获6K+ Star。
 			\end{itemize}
 			\item \textbf{公司技术设计}
 			\begin{itemize}
-			\item {\textbf{UMM(Unified mind model)}}：统一心识模型，比OpenAI首次提出AIAgent概念早16个月。
-			\item {\textbf{MindOS}}：国内最早的LLM Agent Platform，比字节Coze平台上线时间早17个月。
-			\item {\textbf{LPM(Large personal model)}}：基于Lora与用户在线数据训练个性化LLM，可用于生产环境。
+				\item {\textbf{LPM(Large personal model)}}：基于Lora与用户在线数据训练个性化LLM，可用于生产环境。
+				\item {\textbf{MindOS}}：国内最早的LLM Agent Platform，比字节Coze平台上线时间早17个月。
+				\item {\textbf{UMM(Unified mind model)}}：统一心识模型，比OpenAI首次提出AIAgent概念早16个月。
 			\end{itemize}
 						
 			\item \textbf{Infra技术职责}
 			\begin{itemize}
 				\item \textbf{AiInfra —— 打造LLM应用基础设施最佳实践}
 				\begin{itemize}
+					\item \textbf{MLOps平台：}设计并实施包含数据采集、数据增强、LLM训练、LLM部署的全链路自动化MLOps平台。结合开源工具ClearML的模型观测能力，用于支撑LPM实时训练并做生产部署。
 					\item \textbf{LLM统一接入层：}前期使用Java自建基础服务，实现OpenAI、AzureOpenAI、GCPVertexAI、Claude等模型的统一接入、部署管理、多账号池化、探活、权重分配、成本统计与可视化等功能。后期迁移至LiteLLM作为提供上述功能的最佳实践。
 					\item \textbf{LLM工程平台：}使用Langfuse标准化算法离线实验管理、Prompt资产管理、资产版本管理、线上LLM-Tracing等功能。
-					\item \textbf{MLOps解决方案：}使用ClearML作为LLM训练的MLOps平台，用生产数据训练、测试基于qwen2-7b大模型，支持LPM的\href{https://arxiv.org/abs/2406.18312}{\textbf{论文研究}}和生产业务。
 				\end{itemize}
 				
-				\item \textbf{DevOps —— 安全生产}
+				\item \textbf{DevOps —— 高效、安全生产}
 				\begin{itemize}
 					\item \textbf{生产环境管理：}设计并搭建Prod/Pre/Test等多套生产环境，包含严格CodeReview流程的可伸缩GitServer、CI/CD流程、零信任设备管理等基础设施。涉及技术：Gitlab、Helm、Java、Jenkins、JumpServer、Kubernetes、Octant、Python、Rancher、Shell等。
 					\item \textbf{系统可观测性：}选型、设计并构建公司后台系统使用的分布式配置、分布式限流、分布式调度、应用性能监控及日志监控内部生产等基础设施。涉及技术：Apollo、Datadog、Grafana、Loki、Nacos、Prometheus、Sentinel、Skywalking、xxl-job、腾讯云CLS等。
@@ -391,7 +411,7 @@
 		\section{实习经历}
 		\resumeSubHeadingListStart
 		\item{
-			\textbf{爱彼迎}{: 2018年夏，爱彼迎发力中国市场，作为大陆首批8个实习生，全栈开发了当年国内版房东年度回顾页。}
+			\textbf{爱彼迎}{: 2018年夏爱彼迎发力中国市场，作为大陆首批8个实习生，全栈开发国内版房东年度回顾页。}
 			\hfill
 		}
 		\item{
@@ -419,11 +439,11 @@
 		\section{系统经验与技术栈}
 		\resumeSubHeadingListStart
 		\item{
-			\textbf{系统经验}{：LLM应用、Prompt工程、MLOps、超大规模分布式系统、高可用、可观测性、自动驾驶等}
+			\textbf{系统经验}{：MLOps、LLM应用、Prompt工程、超大规模分布式系统、高可用、可观测性、自动驾驶等}
 			\hfill
 		}
 		\item{
-			\textbf{技术栈}{：Java、Python、Kubernetes、Shell、C++、国内外主流云、主流运维工具等}
+			\textbf{技术栈}{：Cursor、Java、Python、Kubernetes、Shell、C++、全球主流云、主流运维工具等}
 			\hfill
 		}
 		\resumeSubHeadingListEnd
